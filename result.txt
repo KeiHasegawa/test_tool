@@ -3,6 +3,7 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
+target 64 bit GNU code
 begin 2020.07.06 15:16
 ISO_IEC_9899 4/2801(?)
 C2nd 0/156
@@ -27,6 +28,7 @@ vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
 flex (2.5.35)
+target 32 bit GNU code
 begin 2020.07.06 09:18
 ISO_IEC_9899 0/2801
 C2nd 0/156
@@ -63,6 +65,7 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
+target 64 bit GNU code
 begin 2020.07.06 08:00
 ISO_IEC_9899 6/2842 (?)
 C2nd 0/157
@@ -96,6 +99,7 @@ vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
 flex (2.5.35)
+target 32 bit GNU code
 begin 2020.07.06 06:21
 ISO_IEC_9899 0/2842
 C2nd 0/157
