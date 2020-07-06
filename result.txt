@@ -10,6 +10,30 @@ optimization 0/82
 ISO_IEC_14882 0/553
 end 2020.07.06 09:33
 --------------------------
+hcxx1.exe printf_chkxx.dll
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 16:39
+ISO_IEC_9899 0/2823
+C2nd 0/154
+optimization 0/82
+ISO_IEC_14882 1/552(?)
+end 2020.07.06 16:14
+--------------------------
+hcxx1.exe tacsimxx.dll
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 16:24
+ISO_IEC_9899 0/2777
+C2nd 0/156
+optimization 0/82
+ISO_IEC_14882 0/550
+end 2020.07.06 16:37
+--------------------------
 hcc1.exe intel.dll
 Windows 10 64 bit
 g++ (9.3.0) -g
