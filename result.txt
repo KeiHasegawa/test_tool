@@ -139,3 +139,15 @@ ISO_IEC_9899 0/2818
 C2nd 0/157
 optimization 0/82
 end 2020.07.06 07:25
+--------------------------
+hcc1.exe intel.dll
+Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+target 64 bit MS code
+begin 2020.07.07 07:40
+ISO_IEC_9899 16/2836(?)
+C2nd 2/148(?)
+optimization 0/82
+end 2020.07.07 18:30
