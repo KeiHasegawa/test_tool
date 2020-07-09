@@ -84,6 +84,19 @@ C2nd 0/157
 optimization 0/82
 end 2020.07.06 10:17
 --------------------------
+hcc1.exe intel.dll
+target 64 bit GNU code
+Windows 10 64 bit
+Visual Studio 2019 16.3.10 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.09 06:37
+ISO_IEC_9899 6/2842(?)
+C2nd 0/157
+optimization 0/82
+end 2020.07.08 10:32
+--------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
 g++ (9.3.0) -g
@@ -151,3 +164,15 @@ ISO_IEC_9899 16/2836(?)
 C2nd 2/148(?)
 optimization 0/82
 end 2020.07.07 18:30
+--------------------------
+hcc1.exe intel.dll
+target 32 bit MS code
+Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.08 12:51
+ISO_IEC_9899 17/2836(?)
+C2nd 2/148
+optimization 0/82
+end 2020.07.08 21:02
