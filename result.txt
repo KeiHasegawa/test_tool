@@ -45,47 +45,8 @@ begin 2020.07.10 20:53
 ISO_IEC_9899 0/2777
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/550(?)
+ISO_IEC_14882 1/550(?) See Bug #1
 end 2020.07.10 22:34
-
-43_ISO_IEC_14882/14_Templates/0_Templates/test092.cpp
-Expected log:
--------------
-::f called
-c = 1
-N::f called
-c = 1.500000
--------------
-But no output. If simple source:
---------------------------------
-extern "C" int printf(const char*, ...);
-
-template<class C> void f(C c)
-{
-  printf("::f called\n");
-  printf("c = %d\n", c);
-}
-
-namespace N {
-  template<class C> void f(C c)
-  {
-    printf("N::f called\n");
-    printf("c = %f\n", c);
-  }
-}
-
-int main()
-{
-  int a = 1;
-  f(a);
-  double b = 1.5;
-  N::f(b);
-  return 0;
-}
---------------------------------------
-specified, expected log is generated. But actual preprocessed source is
-specified, no log is outputed. If line number infomation is deleted from
-acutal preprocessed source, expected log is generated.
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit GNU code
@@ -131,7 +92,7 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.10 07:39
-ISO_IEC_9899 1/2842
+ISO_IEC_9899 1/2842 See Bug #2
 C2nd 0/157
 optimization 0/82
 end 2020.07.10 10:47
@@ -241,3 +202,55 @@ ISO_IEC_9899 17/2836(?)
 C2nd 2/148
 optimization 0/82
 end 2020.07.08 21:02
+--------------------------
+Bug #1
+
+hcxx1.exe tacsimxx.dll g++
+
+43_ISO_IEC_14882/14_Templates/0_Templates/test092.cpp
+Expected log:
+-------------
+::f called
+c = 1
+N::f called
+c = 1.500000
+-------------
+But no output. If simple source:
+--------------------------------
+extern "C" int printf(const char*, ...);
+
+template<class C> void f(C c)
+{
+  printf("::f called\n");
+  printf("c = %d\n", c);
+}
+
+namespace N {
+  template<class C> void f(C c)
+  {
+    printf("N::f called\n");
+    printf("c = %f\n", c);
+  }
+}
+
+int main()
+{
+  int a = 1;
+  f(a);
+  double b = 1.5;
+  N::f(b);
+  return 0;
+}
+--------------------------------------
+is specified, expected log is generated. But actual preprocessed source is
+specified, no log is outputed. If line number infomation is deleted from
+acutal preprocessed source, expected log is generated.
+--------------------------------------
+Bug #2
+hcc1.exe intel.dll g++ and VC++
+
+41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok/test010.c
+
+No log is outputed. But if test010.exe generated at the test is executed,
+Expected log is outputed.
+--------------------------------------
