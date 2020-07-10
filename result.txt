@@ -11,6 +11,19 @@ optimization 0/82
 ISO_IEC_14882 1/553(?)
 end 2020.07.06 18:18
 --------------------------
+hcxx1.exe intelxx.dll
+target 64 bit GNU code
+Windows 10 64 bit
+VC++ Debug (previous version of Visual Studio 2019 16.3.10)
+bison (3.0.4)
+flex (2.6.4)
+begin 07.04 20:33
+ISO_IEC_9899 0/2801
+C2nd 0/156
+optimization 0/82
+ISO_IEC_14882 0/553
+end 07.05. 00:54
+--------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
 g++ (9.3.0) -g
