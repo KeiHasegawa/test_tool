@@ -197,11 +197,13 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.08 12:51
-ISO_IEC_9899 17/2836(?)
-C2nd 2/148
+begin 2020.07.11 09:54
+ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 8 failures
+                        See Bug #6 about 3 failures
+			See Bug #7 about 2 failures
+C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.08 21:02
+end 2020.07.11 18:23
 --------------------------
 Bug #1
 
@@ -290,4 +292,18 @@ hcxx1.exe printf_chkxx.dll vine linux x86
 
 Run-time error repoted:
 *** glibc detected *** hcxx1.exe: free(): invalid pointer: 0x08382ef8 ***
+--------------------------------------
+Bug #6
+hcc1.exe intel.dll target 32 bit MS code
+
+41_ISO_IEC_9899/6_Language/2_Conversions/1_Arithmetic_operands/3_Real_floating_and_integer/1_ok/test00[012].c
+
+Unexpected floating point exception occures when test00[012].exe is executed.
+--------------------------------------
+Bug #7
+hcc1.exe intel.dll target 32 bit MS code
+
+41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/1_ok/test00[03].c
+
+Unexpected exception occures when test00[03].exe is executed.
 --------------------------------------
