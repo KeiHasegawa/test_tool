@@ -173,8 +173,8 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.10 23:03
-ISO_IEC_9899 10/2836(?) See Bug #4.1 and #4.2 about 8 failures
-C2nd 2/148 See Bug #3
+ISO_IEC_9899 10/2836(?) See Bug #3.1 and #3.2 about 8 failures
+C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.11 07:55
 --------------------------
@@ -187,7 +187,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.09 15:51
 ISO_IEC_9899 13/2839(?)
-C2nd 2/148 See Bug #3
+C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.10 03:10
 --------------------------
@@ -254,25 +254,14 @@ hcc1.exe intel.dll Windows g++ and VC++
 No log is outputed. But if test010.exe generated at the test is executed,
 Expected log is outputed.
 --------------------------------------
-Bug #3
-hcc1.exe intel.dll target MS code
-42_C2nd/test{109,127}.c
-LINK.exe error-reports that `sprintf_s' is multiple defined at
-test{109,127}.obj and library(MSVCRTD.lib). Here, `sprintf_s' inline
-function-definition exists at include file
-(D:/Windows Kits/10/Include/10.0.17763.0/ucrt/stdio.h).
-For inline function `sprintf_s', hcc1.exe and intel.dll generate
-static function code for `sprintf_s' because hcc1.exe cannot do inline
-expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
---------------------------------------
 hcc1.exe intel.dll target MS code
 
-Bug #4.1
+Bug #3.1
 
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
 Error for the generated assembler source line is too long.
 --------------------------------------
-Bug #4.2
+Bug #3.2
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/3_ok
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/5_ok
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/2_Linkages_of_identifiers/1_ok
@@ -282,5 +271,16 @@ Bug #4.2
 41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/5_ok
 
 Link.exe error-reports that `printf' is multiple defined.
-Same reason with Bug #3.
+Same reason with Bug #4.
+--------------------------------------
+Bug #4
+hcc1.exe intel.dll target MS code
+42_C2nd/test{109,127}.c
+LINK.exe error-reports that `sprintf_s' is multiple defined at
+test{109,127}.obj and library(MSVCRTD.lib). Here, `sprintf_s' inline
+function-definition exists at include file
+(D:/Windows Kits/10/Include/10.0.17763.0/ucrt/stdio.h).
+For inline function `sprintf_s', hcc1.exe and intel.dll generate
+static function code for `sprintf_s' because hcc1.exe cannot do inline
+expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
 --------------------------------------
