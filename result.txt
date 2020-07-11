@@ -54,24 +54,24 @@ vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.07.06 09:18
+begin 2020.07.11 16:09
 ISO_IEC_9899 0/2801
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/553
-end 2020.07.06 09:33
+ISO_IEC_14882 0/554
+end 2020.07.11 16:24
 --------------------------
 hcxx1.exe printf_chkxx.dll
 vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.07.06 16:39
+begin 2020.07.11 16:28
 ISO_IEC_9899 0/2823
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 1/552(?)
-end 2020.07.06 16:14
+ISO_IEC_14882 1/553(?) See Bug #5
+end 2020.07.11 16:35
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
@@ -283,4 +283,11 @@ function-definition exists at include file
 For inline function `sprintf_s', hcc1.exe and intel.dll generate
 static function code for `sprintf_s' because hcc1.exe cannot do inline
 expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
+--------------------------------------
+Bug #5
+hcxx1.exe printf_chkxx.dll vine linux x86
+43_ISO_IEC_14882/14_Templates/0_Templates/test064.cpp
+
+Run-time error repoted:
+*** glibc detected *** hcxx1.exe: free(): invalid pointer: 0x08382ef8 ***
 --------------------------------------
