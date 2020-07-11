@@ -172,11 +172,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.07 07:40
-ISO_IEC_9899 16/2836(?)
-C2nd 2/148(?)
+begin 2020.07.10 23:03
+ISO_IEC_9899 10/2836(?) See Bug #4.1 and #4.2 about 8 failures
+C2nd 2/148 See Bug #3
 optimization 0/82
-end 2020.07.07 18:30
+end 2020.07.11 07:55
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -187,7 +187,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.09 15:51
 ISO_IEC_9899 13/2839(?)
-C2nd 2/148
+C2nd 2/148 See Bug #3
 optimization 0/82
 end 2020.07.10 03:10
 --------------------------
@@ -205,7 +205,7 @@ end 2020.07.08 21:02
 --------------------------
 Bug #1
 
-hcxx1.exe tacsimxx.dll g++
+hcxx1.exe tacsimxx.dll Windows g++
 
 43_ISO_IEC_14882/14_Templates/0_Templates/test092.cpp
 Expected log:
@@ -215,7 +215,7 @@ c = 1
 N::f called
 c = 1.500000
 -------------
-But no output. If simple source:
+But no log is output. If simple source:
 --------------------------------
 extern "C" int printf(const char*, ...);
 
@@ -242,15 +242,45 @@ int main()
   return 0;
 }
 --------------------------------------
-is specified, expected log is generated. But actual preprocessed source is
+is specified, expected log is outputed. But actual preprocessed source is
 specified, no log is outputed. If line number infomation is deleted from
 acutal preprocessed source, expected log is generated.
 --------------------------------------
 Bug #2
-hcc1.exe intel.dll g++ and VC++
+hcc1.exe intel.dll Windows g++ and VC++
 
 41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok/test010.c
 
 No log is outputed. But if test010.exe generated at the test is executed,
 Expected log is outputed.
+--------------------------------------
+Bug #3
+hcc1.exe intel.dll target MS code
+42_C2nd/test{109,127}.c
+LINK.exe error-reports that `sprintf_s' is multiple defined at
+test{109,127}.obj and library(MSVCRTD.lib). Here, `sprintf_s' inline
+function-definition exists at include file
+(D:/Windows Kits/10/Include/10.0.17763.0/ucrt/stdio.h).
+For inline function `sprintf_s', hcc1.exe and intel.dll generate
+static function code for `sprintf_s' because hcc1.exe cannot do inline
+expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
+--------------------------------------
+hcc1.exe intel.dll target MS code
+
+Bug #4.1
+
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
+Error for the generated assembler source line is too long.
+--------------------------------------
+Bug #4.2
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/3_ok
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/5_ok
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/2_Linkages_of_identifiers/1_ok
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/3_mem
+41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/4_mem
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/3_ok
+41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/5_ok
+
+Link.exe error-reports that `printf' is multiple defined.
+Same reason with Bug #3.
 --------------------------------------
