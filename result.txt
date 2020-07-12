@@ -110,6 +110,18 @@ C2nd 0/157
 optimization 0/82
 end 2020.07.12 01:43
 --------------------------
+hcc1.exe intel.dll
+target 32 bit GNU code
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 06:21
+ISO_IEC_9899 0/2842
+C2nd 0/157
+optimization 0/82
+end 2020.07.06 06:32
+--------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
 g++ (9.3.0) -g
@@ -134,6 +146,17 @@ C2nd 0/155
 optimization 0/82
 end 2020.07.12 08:13
 --------------------------
+hcc1.exe printf_chk.dll
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 07:07
+ISO_IEC_9899 0/2864
+C2nd 0/155
+optimization 0/82
+end 2020.07.06 07:13
+--------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
 g++ (9.3.0) -g
@@ -156,29 +179,6 @@ ISO_IEC_9899 0/2818
 C2nd 0/156
 optimization 0/82
 end 2020.07.12 14:50
---------------------------
-hcc1.exe intel.dll
-target 32 bit GNU code
-vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.06 06:21
-ISO_IEC_9899 0/2842
-C2nd 0/157
-optimization 0/82
-end 2020.07.06 06:32
---------------------------
-hcc1.exe printf_chk.dll
-vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.06 07:07
-ISO_IEC_9899 0/2864
-C2nd 0/155
-optimization 0/82
-end 2020.07.06 07:13
 --------------------------
 hcc1.exe tacsim.dll
 vine linux x86
