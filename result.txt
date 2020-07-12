@@ -145,6 +145,18 @@ C2nd 0/157
 optimization 0/82
 end 2020.07.06 12:22
 --------------------------
+hcc1.exe tacsim.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.12 08:27
+ISO_IEC_9899 0/2818
+C2nd 0/156
+optimization 0/82
+end 2020.07.12 14:50
+--------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
 vine linux x86
