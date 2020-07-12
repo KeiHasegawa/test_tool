@@ -190,7 +190,11 @@ vine linux x86
 g++ (6.4.0) -O3
 bison (2.4.3)
 flex (2.5.35)
-############## No result #####################
+begin 2020.07.12 21:54
+ISO_IEC_9899 0/2842
+C2nd 0/157
+optimization 0/82
+end 2020.07.12 22:03
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
