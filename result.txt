@@ -348,7 +348,7 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.10 23:03
-ISO_IEC_9899 10/2836(?) See Bug #3.1 and #3.2 about 8 failures
+ISO_IEC_9899 10/2836(?) See Bug #3.1 and #3.2 about 9 failures
 C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.11 07:55
@@ -364,20 +364,20 @@ flex (2.6.4)
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.3.10 Debug
+Visual Studio 2019 16.6.3 Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.09 15:51
-ISO_IEC_9899 13/2839(?)
+begin 2020.07.12 16:08
+ISO_IEC_9899 10/2836(?) See Bug #3.1 and #3.2 about 9 failures
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.10 03:10
+end 2020.07.13 03:56
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.3.10 Relase
+Visual Studio 2019 16.6.3 Relase
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -390,7 +390,7 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.11 09:54
-ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 8 failures
+ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 9 failures
                         See Bug #6 about 3 failures
                         See Bug #7 about 2 failures
 C2nd 2/148 See Bug #4
@@ -479,6 +479,7 @@ hcc1.exe intel.dll target MS code
 Bug #3.1
 
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
+41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c
 Error for the generated assembler source line is too long.
 --------------------------------------
 Bug #3.2
