@@ -1,4 +1,25 @@
 hcxx1.exe intelxx.dll
+target 32 bit GNU code
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.11 16:09
+ISO_IEC_9899 0/2801
+C2nd 0/156
+optimization 0/82
+ISO_IEC_14882 0/554
+end 2020.07.11 16:24
+--------------------------
+hcxx1.exe intelxx.dll
+target 32 bit GNU code
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############### No result #######################
+--------------------------
+hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
 g++ (9.3.0) -g
@@ -14,6 +35,15 @@ end 2020.07.10 15:03
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.10 12:00
+############### No result #######################
+--------------------------
+hcxx1.exe intelxx.dll
+target 64 bit GNU code
+Windows 10 64 bit
 VC++ Debug (previous version of Visual Studio 2019 16.3.10)
 bison (3.0.4)
 flex (2.6.4)
@@ -24,42 +54,19 @@ optimization 0/82
 ISO_IEC_14882 0/553
 end 07.05. 00:54
 --------------------------
-hcxx1.exe printf_chkxx.dll
+hcxx1.exe intelxx.dll
+target 64 bit GNU code
 Windows 10 64 bit
-g++ (9.3.0) -g
-bison (3.0.4)
-flex (2.6.4)
-begin 2020.07.10 15:15
-ISO_IEC_9899 0/2823
-C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/552
-end 2020.07.10 16:23
---------------------------
-hcxx1.exe tacsimxx.dll
-Windows 10 64 bit
-g++ (9.3.0) -g
-bison (3.0.4)
-flex (2.6.4)
-begin 2020.07.10 20:53
-ISO_IEC_9899 0/2777
-C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 1/550(?) See Bug #1
-end 2020.07.10 22:34
+Visual Studio 2019 16.6.3 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
-target 32 bit GNU code
-vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.11 16:09
-ISO_IEC_9899 0/2801
-C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 0/554
-end 2020.07.11 16:24
+target 64 bit GNU code
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Release
+Visual C++ 2019 00435-60000-00000-AA920
+############## No result #####################
 --------------------------
 hcxx1.exe printf_chkxx.dll
 vine linux x86
@@ -73,6 +80,44 @@ optimization 0/82
 ISO_IEC_14882 1/553(?) See Bug #5
 end 2020.07.11 16:35
 --------------------------
+hcxx1.exe printf_chkxx.dll
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############## No result #####################
+--------------------------
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.10 15:15
+ISO_IEC_9899 0/2823
+C2nd 0/154
+optimization 0/82
+ISO_IEC_14882 0/552
+end 2020.07.10 16:23
+--------------------------
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+############## No result ##################### 
+--------------------------
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Release
+Visual C++ 2019 00435-60000-00000-AA920
+############## No result ##################### 
+--------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
 g++ (6.4.0) -g
@@ -84,6 +129,68 @@ C2nd 0/156
 optimization 0/82
 ISO_IEC_14882 0/551
 end 2020.07.11 16:44
+--------------------------
+hcxx1.exe tacsimxx.dll
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############## No result ##################### 
+--------------------------
+hcxx1.exe tacsimxx.dll
+Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.10 20:53
+ISO_IEC_9899 0/2777
+C2nd 0/156
+optimization 0/82
+ISO_IEC_14882 1/550(?) See Bug #1
+end 2020.07.10 22:34
+--------------------------
+hcxx1.exe tacsimxx.dll
+Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcxx1.exe tacsimxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcxx1.exe tacsimxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Relase
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe intel.dll
+target 32 bit GNU code
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 06:21
+ISO_IEC_9899 0/2842
+C2nd 0/157
+optimization 0/82
+end 2020.07.06 06:32
+--------------------------
+hcc1.exe intel.dll
+target 32 bit GNU code
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############## No result #####################
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -100,6 +207,14 @@ end 2020.07.10 10:47
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe intel.dll
+target 64 bit GNU code
+Windows 10 64 bit
 Visual Studio 2019 16.6.3 Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
@@ -111,16 +226,13 @@ optimization 0/82
 end 2020.07.12 01:43
 --------------------------
 hcc1.exe intel.dll
-target 32 bit GNU code
-vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.06 06:21
-ISO_IEC_9899 0/2842
-C2nd 0/157
-optimization 0/82
-end 2020.07.06 06:32
+target 64 bit GNU code
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Release
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -132,6 +244,24 @@ ISO_IEC_9899 0/2864
 C2nd 0/155
 optimization 0/82
 end 2020.07.06 13:39
+--------------------------
+hcc1.exe printf_chk.dll
+vine linux x86
+g++ (6.4.0) -g
+bison (2.4.3)
+flex (2.5.35)
+begin 2020.07.06 07:07
+ISO_IEC_9899 0/2864
+C2nd 0/155
+optimization 0/82
+end 2020.07.06 07:13
+--------------------------
+hcc1.exe printf_chk.dll
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############## No result #####################
 --------------------------
 hcc1.exe printf_chk.dll
 target 64 bit GNU code
@@ -147,15 +277,31 @@ optimization 0/82
 end 2020.07.12 08:13
 --------------------------
 hcc1.exe printf_chk.dll
+target 64 bit GNU code
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Release
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe tacsim.dll
 vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.07.06 07:07
-ISO_IEC_9899 0/2864
-C2nd 0/155
+begin 2020.07.06 07.15
+ISO_IEC_9899 0/2818
+C2nd 0/157
 optimization 0/82
-end 2020.07.06 07:13
+end 2020.07.06 07:25
+--------------------------
+hcc1.exe tacsim.dll
+vine linux x86
+g++ (6.4.0) -O3
+bison (2.4.3)
+flex (2.5.35)
+############## No result #####################
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -170,6 +316,13 @@ end 2020.07.06 12:22
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe tacsim.dll
+Windows 10 64 bit
 Visual Studio 2019 16.6.3 Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
@@ -181,15 +334,12 @@ optimization 0/82
 end 2020.07.12 14:50
 --------------------------
 hcc1.exe tacsim.dll
-vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.06 07.15
-ISO_IEC_9899 0/2818
-C2nd 0/157
-optimization 0/82
-end 2020.07.06 07:25
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Relase
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -206,6 +356,14 @@ end 2020.07.11 07:55
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe intel.dll
+target 64 bit MS code
+Windows 10 64 bit
 Visual Studio 2019 16.3.10 Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
@@ -215,6 +373,15 @@ ISO_IEC_9899 13/2839(?)
 C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.10 03:10
+--------------------------
+hcc1.exe intel.dll
+target 64 bit MS code
+Windows 10 64 bit
+Visual Studio 2019 16.3.10 Relase
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -229,6 +396,32 @@ ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 8 failures
 C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.11 18:23
+--------------------------
+hcc1.exe intel.dll
+target 32 bit MS code
+Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe intel.dll
+target 32 bit MS code
+Windows 10 64 bit
+Visual Studio 2019 16.3.10 Debug
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
+--------------------------
+hcc1.exe intel.dll
+target 32 bit MS code
+Windows 10 64 bit
+Visual Studio 2019 16.3.10 Relase
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
 --------------------------
 Bug #1
 
