@@ -58,15 +58,6 @@ end 07.14. 11:20
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
-Visual C++ 2019 00435-60000-00000-AA920
-bison (3.0.4)
-flex (2.6.4)
-############## No result #####################
---------------------------
-hcxx1.exe intelxx.dll
-target 64 bit GNU code
-Windows 10 64 bit
 Visual Studio 2019 16.6.3 Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
