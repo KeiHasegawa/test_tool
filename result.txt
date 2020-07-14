@@ -316,7 +316,11 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.07.14 14:31
+ISO_IEC_9899 1/2842 See Bug #1
+C2nd 0/157
+optimization 0/82
+end 2020.07.14 17:22
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -341,17 +345,6 @@ flex (2.6.4)
 ############## No result #####################
 --------------------------
 hcc1.exe printf_chk.dll
-Windows 10 64 bit
-g++ (9.3.0) -g
-bison (3.0.4)
-flex (2.6.4)
-begin 2020.07.06 12:46
-ISO_IEC_9899 0/2864
-C2nd 0/155
-optimization 0/82
-end 2020.07.06 13:39
---------------------------
-hcc1.exe printf_chk.dll
 vine linux x86
 g++ (6.4.0) -g
 bison (2.4.3)
@@ -372,6 +365,24 @@ ISO_IEC_9899 0/2864
 C2nd 0/155
 optimization 0/82
 end 2020.07.12 22:39
+--------------------------
+hcc1.exe printf_chk.dll
+Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.06 12:46
+ISO_IEC_9899 0/2864
+C2nd 0/155
+optimization 0/82
+end 2020.07.06 13:39
+--------------------------
+hcc1.exe printf_chk.dll
+Windows 10 64 bit
+g++ (9.3.0) -O3
+bison (3.0.4)
+flex (2.6.4)
+############## No result #####################
 --------------------------
 hcc1.exe printf_chk.dll
 target 64 bit GNU code
