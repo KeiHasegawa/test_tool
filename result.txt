@@ -48,7 +48,7 @@ end 2020.07.16 08:25
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -62,7 +62,7 @@ end 07.14. 11:20
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -113,7 +113,7 @@ end 2020.07.17 03:17
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -126,7 +126,7 @@ end 2020.07.14 14:11
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -177,7 +177,7 @@ end 2020.07.17 04:48
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -218,7 +218,7 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -229,7 +229,7 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -260,7 +260,7 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -271,7 +271,7 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -330,7 +330,7 @@ end 2020.07.14 17:22
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -343,7 +343,7 @@ end 2020.07.12 01:43
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -396,7 +396,7 @@ end 2020.07.14 19.27
 hcc1.exe printf_chk.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -409,7 +409,7 @@ end 2020.07.12 08:13
 hcc1.exe printf_chk.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release
+Visual Studio 2019 16.6.3 x64/Release
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -461,7 +461,7 @@ end 2020.07.14 22:13
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -508,7 +508,7 @@ end 2020.07.15 15:39
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
@@ -558,7 +558,7 @@ flex (2.6.4)
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug
+Visual Studio 2019 16.6.3 x64/Debug
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
