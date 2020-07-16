@@ -168,7 +168,12 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.07.17 03:22
+ISO_IEC_9899 0/2777
+C2nd 0/156
+optimization 0/82
+ISO_IEC_14882 1/550(?) See Bug #1
+end 2020.07.17 04:48
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
