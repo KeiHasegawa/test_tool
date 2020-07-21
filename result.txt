@@ -162,8 +162,18 @@ optimization 0/82
 ISO_IEC_14882 0/552
 end 2020.07.18 17:05
 --------------------------
-Debug|x86
-############## No result #####################
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.6.3 Debug|x86
+Visual C++ 2019 00435-60000-00000-AA920
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.21 17:20
+ISO_IEC_9899 0/2823
+C2nd 0/154
+optimization 0/82
+ISO_IEC_14882 0/552
+end 2020.07.21 19:51
 --------------------------
 Release|x86
 ############## No result #####################
