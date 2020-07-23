@@ -678,7 +678,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.19 14:58
 ISO_IEC_9899 20/2836(?) See Bug #3.1 and #3.2 about 9 failures
-                        2 process (vs_wrapper, hcpp) was killed
+                        2 processes (vs_wrapper, hcpp) were killed
 			10 lof.common were not overwrited
 C2nd 2/148 See Bug #4
 optimization 0/82
@@ -693,13 +693,16 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.11 09:54
-ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 9 failures
-                        See Bug #6 about 3 failures
-                        See Bug #7 about 2 failures
-C2nd 2/148 See Bug #4
+begin 2020.07.23 04:28
+ISO_IEC_9899 16/2835 See Bug #3.1 and #3.2 about 8 failures
+                     See Bug #6 about 3 failures
+                     See Bug #7 about 2 failures
+                     proceses (vs_wrapper) were killed
+                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
+C2nd 5/148 See Bug #4 about 2 failueres
+           3 processes (vs_wrapper) were killed
 optimization 0/82
-end 2020.07.11 18:23
+end 2020.07.23 13:14
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -766,7 +769,7 @@ begin 2020.07.20 06:51
 ISO_IEC_9899 18/2836(?) See Bug #3.1 and #3.2 about 9 failures
                         See Bug #6 about 3 failures
                         See Bug #7 about 2 failures
-                        2 process (vs_wrapper) were killed
+                        2 processes (vs_wrapper) were killed
                         2 lof.vs.32 are updated
 C2nd 2/148 See Bug #4
 optimization 0/82
