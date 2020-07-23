@@ -30,12 +30,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.10 12:00
+begin 2020.07.23 14:30
 ISO_IEC_9899 0/2801
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/553
-end 2020.07.10 15:03
+ISO_IEC_14882 1/567(?) See Bug #
+end 2020.07.23 17:20
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -127,12 +127,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.10 15:15
+begin 2020.07.23 17:46
 ISO_IEC_9899 0/2823
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/552
-end 2020.07.10 16:23
+ISO_IEC_14882 0/566
+end 2020.07.23 19:02
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -859,6 +859,27 @@ function-definition exists at include file
 For inline function `sprintf_s', hcc1.exe and intel.dll generate
 static function code for `sprintf_s' because hcc1.exe cannot do inline
 expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
+--------------------------------------
+Bug #5
+hcxx1.exe intelxx.dll Windows 10 g++
+
+14_Templates/0_Templates/test079.c
+
+Thread 1 "hcxx1" received signal SIGABRT, Aborted.
+__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::vector<cxx_compiler::usr*, std::allocator<cxx_compiler::usr*> > > > >::deallocate (this=0x0, __p=0x0)
+    at /usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/ext/new_allocator.h:129
+129	      }
+(gdb) where
+#0  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::vector<cxx_compiler::usr*, std::allocator<cxx_compiler::usr*> > > > >::deallocate (this=0x0, __p=0x0)
+    at /usr/lib/gcc/x86_64-pc-cygwin/9.3.0/include/c++/ext/new_allocator.h:129
+#1  0x000303ea0000c98d in ?? ()
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+
+If not include stdio.h and directly declare like:
+
+extern "C" int printf(const char*, ...);
+
+This bug is not happend.
 --------------------------------------
 Bug #6
 hcc1.exe intel.dll target 32 bit MS code
