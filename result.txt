@@ -560,22 +560,22 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.06 10:59
+begin 2020.07.22 12:54
 ISO_IEC_9899 0/2818
 C2nd 0/157
 optimization 0/82
-end 2020.07.06 12:22
+end 2020.07.22 14:10
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.22 12:54
+begin 2020.07.14 20:58
 ISO_IEC_9899 0/2818
 C2nd 0/157
 optimization 0/82
-end 2020.07.22 14:10
+end 2020.07.14 22:13
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -623,12 +623,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.10 23:03
-ISO_IEC_9899 10/2836(?) See Bug #3.1 and #3.2 about 8 failures
+begin 2020.07.22 14:49
+ISO_IEC_9899 8/2836 See Bug #3.1 and #3.2 about 8 failueres
                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.11 07:55
+end 2020.07.22 23:24
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -636,12 +636,12 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.22 14:49
-ISO_IEC_9899 8/2836 See Bug #3.1 and #3.2 about 8 failueres
-                    41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
+begin 2020.07.15 06:29
+ISO_IEC_9899 9/2836(?) See Bug #3.1 and #3.2 about 8 failueres
+                    41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operator/2_Function_calls/4_param/test046.c is pass ( unexpected )
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.22 23:24
+end 2020.07.15 15:39
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -690,6 +690,20 @@ Release|x86
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
+g++ (9.3.0) -g
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.07.11 09:54
+ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 9 failures
+                        See Bug #6 about 3 failures
+                        See Bug #7 about 2 failures
+C2nd 2/148 See Bug #4
+optimization 0/82
+end 2020.07.11 18:23
+--------------------------
+hcc1.exe intel.dll
+target 32 bit MS code
+Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
@@ -701,20 +715,6 @@ ISO_IEC_9899 14/2836(?) See Bug #3.1 and #3.2 about 8 failures
 C2nd 2/148 See Bug #4
 optimization 0/82
 end 2020.07.15 23:58
---------------------------
-hcc1.exe intel.dll
-target 32 bit MS code
-Windows 10 64 bit
-g++ (9.3.0) -g
-bison (3.0.4)
-flex (2.6.4)
-begin 2020.07.11 09:54
-ISO_IEC_9899 16/2835(?) See Bug #3.1 and #3.2 about 9 failures
-                        See Bug #6 about 3 failures
-                        See Bug #7 about 2 failures
-C2nd 2/148 See Bug #4
-optimization 0/82
-end 2020.07.11 18:23
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
