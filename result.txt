@@ -34,7 +34,7 @@ begin 2020.07.23 14:30
 ISO_IEC_9899 0/2801
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/567(?) See Bug #
+ISO_IEC_14882 1/567(?) See Bug #5
 end 2020.07.23 17:20
 --------------------------
 hcxx1.exe intelxx.dll
@@ -217,12 +217,13 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.10 20:53
+begin 2020.07.24 05:58
 ISO_IEC_9899 0/2777
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/550(?) See Bug #1
-end 2020.07.10 22:34
+ISO_IEC_14882 1/564(?) See Bug #5
+                       Bug #1 may be fixed
+end 2020.07.24 07:38
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
