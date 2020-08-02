@@ -114,15 +114,15 @@ end 2020.08.02 09:58
 --------------------------
 hcxx1.exe printf_chkxx.dll
 vine linux x86
-g++ (6.4.0) -O3
+g++ (10.2.0) -O3
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.07.22 11:26
+begin 2020.08.02 12:19
 ISO_IEC_9899 0/2823
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/566
-end 2020.07.22 11:30
+ISO_IEC_14882 0/567
+end 2020.08.02 12:24
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -483,14 +483,14 @@ end 2020.08.02 09:49
 --------------------------
 hcc1.exe printf_chk.dll
 vine linux x86
-g++ (6.4.0) -O3
+g++ (10.2.0) -O3
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.07.12 22:36
+begin 2020.08.02 12:15
 ISO_IEC_9899 0/2864
 C2nd 0/155
 optimization 0/82
-end 2020.07.12 22:39
+end 2020.08.02 12:19
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
