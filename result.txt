@@ -30,12 +30,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.23 14:30
+begin 2020.08.05 14:20
 ISO_IEC_9899 0/2801
 C2nd 0/156
-optimization 0/82
+optimization 2/82 2 lof.cxx1 were not updated
 ISO_IEC_14882 1/567(?) See Bug #5
-end 2020.07.23 17:20
+end 2020.08.05 17:11
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -422,13 +422,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.21 20:36
-ISO_IEC_9899 3/2842 See Bug #2
-                    6_Language/2_Conversions/38_ulong/test0{5,6}.lof.common
-		    were updated.
+begin 2020.08.05 10:19
+ISO_IEC_9899 1/2842 See Bug #2
 C2nd 0/157
 optimization 0/82
-end 2020.07.21 23:26
+end 2020.08.05 14:14
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
