@@ -4,12 +4,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.08.05 09:59
-ISO_IEC_9899 0/2801
+begin 2020.08.06 07:44
+ISO_IEC_9899 1/2801 cxx1.vine.lof were updated
 C2nd 0/156
 optimization 0/82
 ISO_IEC_14882 1/568  1 failure for implementing exception handler
-end 2020.08.05 10:16
+end 2020.08.06 08:02
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit GNU code
@@ -398,11 +398,11 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.08.05 09:44
+begin 2020.08.06 07:32
 ISO_IEC_9899 0/2842
 C2nd 0/157
 optimization 0/82
-end 2020.08.05 09:59
+end 2020.08.06 07:44
 --------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
