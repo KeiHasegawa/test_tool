@@ -655,12 +655,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.22 14:49
-ISO_IEC_9899 8/2836 See Bug #3.1 and #3.2 about 8 failueres
+begin 2020.08.06 11:58
+ISO_IEC_9899 11/2836 See Bug #3.1 and #3.2 about 8 failueres
                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.22 23:24
+end 2020.08.06 21:27
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
