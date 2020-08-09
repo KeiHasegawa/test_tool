@@ -422,11 +422,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.05 10:19
+begin 2020.08.09 11:14
 ISO_IEC_9899 1/2842 See Bug #2
 C2nd 0/157
 optimization 0/82
-end 2020.08.05 14:14
+end 2020.08.09 13:49
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -655,17 +655,13 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.06 11:58
-ISO_IEC_9899 11/2839(?) This test cause new 3 failueres.
-                        13_Nonlocal_jumps/test00{0,1,2}.c
-			13_Nonlocal_jumps/Makefile.ms was added
-			9/2836 <--- previous result (expected)
-              See Bug #3.1 and #3.2 about 8 failueres
+begin 2020.08.09 14:17
+ISO_IEC_9899 8/2836 See Bug #3.1 and #3.2 about 8 failueres
                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
 		    
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.08.06 21:27
+end 2020.08.09 23:20
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
