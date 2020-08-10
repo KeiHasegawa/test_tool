@@ -743,14 +743,14 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.15 16:03
-ISO_IEC_9899 14/2836(?) See Bug #3.1 and #3.2 about 8 failures
-                        See Bug #6 about 3 failures
-                        See Bug #7 about 2 failures
-                        41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
+begin 2020.08.10 07:18
+ISO_IEC_9899 13/2836 See Bug #3.1 and #3.2 about 8 failures
+                     See Bug #6 about 3 failures
+                     See Bug #7 about 2 failures
+                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
 C2nd 2/148 See Bug #4
 optimization 0/82
-end 2020.07.15 23:58
+end 2020.07.15 15:42
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
