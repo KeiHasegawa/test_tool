@@ -57,14 +57,17 @@ Visual Studio 2019 16.6.5 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.29 08:28
+begin 2020.08.25 13:01
 ISO_IEC_9899 0/2801
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/567
-                    At this time, 14_Templates/0_Templates/test079.c DID NOT
-		    failed. But invalid memory access sometimes happens.
-end 2020.07.29. 12:33
+ISO_IEC_14882 3/581(?) 1 fail : See Bug #5
+                       1 fail : lof.vs was updated
+		       1 fail : unexpected hcxx1.exe cause some error.
+      43_ISO_IEC_14882/07_Declarations/3_Namespaces/0_Namespaces/test022.cpp
+      After test, again run hcxx1.exe but error didn't occur and expected
+      result was got.
+end 2020.08.25 17:51
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
