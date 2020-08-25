@@ -4,12 +4,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.08.22 16:00
+begin 2020.08.25 18.25
 ISO_IEC_9899 0/2801
 C2nd 0/156
 optimization 0/82
 ISO_IEC_14882 0/581
-end 2020.08.22 16:18
+end 2020.08.25 18:43
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit GNU code
