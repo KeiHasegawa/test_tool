@@ -198,29 +198,15 @@ Release|x86
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
-g++ (6.4.0) -g
-bison (2.4.3)
-flex (2.5.35)
-begin 2020.07.22 07:32
-ISO_IEC_9899 0/2777
-C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 0/564
-end 2020.07.22 07:44
-
-hcxx1.exe tacsimxx.dll
-vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.08.02 10:10
+begin 2020.08.26 18:00
 ISO_IEC_9899 0/2777
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 2/565
-            Unexpected fail
-            12_Special_member_functions/0_Special_member_functions/test050.cpp
-end 2020.08.02 10:24
+ISO_IEC_14882 1/578(?) See Bug #9
+end 2020.08.26 18:14
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
@@ -243,9 +229,7 @@ begin 2020.08.02 12:32
 ISO_IEC_9899 0/2777
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 2/565
-            Unexpected fail
-            12_Special_member_functions/0_Special_member_functions/test050.cpp
+ISO_IEC_14882 2/565 1 fail : See Bug #9
 end 2020.08.02 12:38
 --------------------------
 hcxx1.exe tacsimxx.dll
@@ -938,3 +922,10 @@ hcxx1.exe intelxx.dll target 64 bit GNU code Visual C++
 
 14_Templates/0_Templates/test077.cpp
 --------------------------------------
+Bug #9
+hcxx1.exe tacsimxx.dll vine linux
+
+12_Special_member_functions/0_Special_member_functions/test050.cpp
+--------------------------------------
+
+
