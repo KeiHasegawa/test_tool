@@ -194,12 +194,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.09.03 18:37
-ISO_IEC_9899 0/2777
+begin 2020.09.07 05:00
+ISO_IEC_9899 0/2779
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/584(?) See Bug #9
-end 2020.09.03 18:49
+ISO_IEC_14882 1/587(?) See Bug #9
+end 2020.09.07 05:12
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
