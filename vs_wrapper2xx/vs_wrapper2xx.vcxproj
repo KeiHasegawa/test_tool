@@ -119,9 +119,9 @@
     <ClCompile Include="vs_wrapper2xx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="$(VS_WRAPPERXX_TEST_A_ASM)" />
-    <MASM Include="$(VS_WRAPPERXX_TEST_B_ASM)" />
-    <MASM Include="$(VS_WRAPPERXX_TEST_C_ASM)" />
+    <MASM Include="$(VS_WRAPPER2XX_TEST_A_ASM)" />
+    <MASM Include="$(VS_WRAPPER2XX_TEST_B_ASM)" />
+    <MASM Include="$(VS_WRAPPER2XX_TEST_C_ASM)" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
