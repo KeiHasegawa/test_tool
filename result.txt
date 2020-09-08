@@ -268,8 +268,6 @@ Visual Studio 2019 16.6.3 Relase
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 Debug|x86
@@ -284,8 +282,6 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -294,8 +290,6 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -305,8 +299,6 @@ Visual Studio 2019 16.6.3 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -316,8 +308,6 @@ Visual Studio 2019 16.6.3 Release|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 Debug|x86
@@ -332,8 +322,6 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -342,8 +330,6 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -353,8 +339,6 @@ Visual Studio 2019 16.6.3 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 hcxx1.exe intelxx.dll
@@ -364,8 +348,6 @@ Visual Studio 2019 16.6.3 Release|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-# Cannot test. VC++ header file contains some feature which is not still
-# supported by hcxx1.exe
 ############## No result #####################
 --------------------------
 Debug|x86
