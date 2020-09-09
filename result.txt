@@ -295,11 +295,16 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Debug|x64
+Visual Studio 2019 16.7.2 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.09.09 16:06
+ISO_IEC_9899 11/2797
+C2nd 2/147
+optimization 0/82
+ISO_IEC_14882 32/590
+end 2020.09.10 08:02
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
