@@ -127,7 +127,7 @@ int conv(int c)
     break;
   case 20:
     if (c == 'e')
-      state = 20;
+      state = 21;
     else
       state = 0;
     break;
