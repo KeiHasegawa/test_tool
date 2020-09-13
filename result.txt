@@ -305,6 +305,10 @@ C2nd 2/147
 optimization 0/82
 ISO_IEC_14882 32/590
 end 2020.09.10 08:02
+
+begin 2020.09.13 10:56
+ISO_IEC_14882 20/590
+end 2020.09.13 13:58
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
