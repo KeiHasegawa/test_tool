@@ -651,16 +651,18 @@ end 2020.07.15 15:39
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.2 Debug|x64
+Visual Studio 2019 16.7.3 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.03 11:01
-ISO_IEC_9899 12/2836 See Bug #3.1 and #3.2 about 9 failures
-                     3 fail : Makefile.ms were updated
-C2nd 2/148 See Bug #4
-optimization 1/82    1 fail : Makefile were updated
-end 2020.09.03 23:32
+begin 2020.09.15 21:05
+ISO_IEC_9899 8/2836 See Bug #3.1 about 2 failures
+                    2 processes (vs_wrapper) were killed
+		    Level down about 3 failures (fixed)
+                    1 lof.cc1.ms was updated
+C2nd 0/148
+optimization 0/82
+end 2020.09.16 09:05
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -736,18 +738,17 @@ flex (2.6.4)
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.1 Debug|x64
+Visual Studio 2019 16.7.3 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.13 06:16
-ISO_IEC_9899 15/2836 See Bug #3.1 and #3.2 about 9 failures
+begin 2020.09.13 14:23
+ISO_IEC_9899 14/2836 See Bug #3.1 and #3.2 about 9 failures
                      See Bug #6 about 3 failures
                      See Bug #7 about 2 failures
-		     1 process (vs_wrapper) was killed
 C2nd 2/148 See Bug #4
-optimization 0/82
-end 2020.08.13 17:59
+optimization 1/82    1 lof was updated
+end 2020.09.14 02:12
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -844,6 +845,7 @@ Bug #3.1
 41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c
 Error for the generated assembler source line is too long.
 --------------------------------------
+Resolved 2020.09.16
 Bug #3.2
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/3_ok
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/5_ok
