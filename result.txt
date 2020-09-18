@@ -295,20 +295,22 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.2 Debug|x64
+Visual Studio 2019 16.7.3 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.09 16:06
-ISO_IEC_9899 11/2797
-C2nd 2/147
+begin 2020.09.17 07:28
+ISO_IEC_9899 27/2797    23 processes were killed
+                        2 lof.cxx1.ms were updated
+			See Bug #3.1 about 2 failueres  
+C2nd 2/147              1 failure : update Makefile
+                        1 failure : fix intelxx.dll
 optimization 0/82
-ISO_IEC_14882 32/590
-end 2020.09.10 08:02
 
-begin 2020.09.13 10:56
-ISO_IEC_14882 20/590
-end 2020.09.13 13:58
+ISO_IEC_14882 15/590    1 failure : not call default ctor for new
+                        allocation area
+			14 failures : exception handling tests 
+end 2020.09.18 02:06
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
