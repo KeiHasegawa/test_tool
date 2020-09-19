@@ -307,8 +307,7 @@ C2nd 2/147              1 failure : update Makefile
                         1 failure : fix intelxx.dll
 optimization 0/82
 
-ISO_IEC_14882 15/590    1 failure : not call default ctor for new
-                        allocation area
+ISO_IEC_14882 15/590    1 failure : test program updated
 			14 failures : exception handling tests 
 end 2020.09.18 02:06
 --------------------------
