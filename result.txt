@@ -657,11 +657,11 @@ Visual Studio 2019 16.7.4 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.23 16:09
-ISO_IEC_9899 2/2836    2 failures : Bug #3.1
+begin 2020.09.25 16:15
+ISO_IEC_9899 2/2838    2 failures : Bug #3.1
 C2nd 0/155
-optimization 1/82   verif.hcc1.vs was updated
-end 2020.09.24 04:25
+optimization 0/82
+end 2020.09.26 06:59
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
