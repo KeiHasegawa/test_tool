@@ -733,14 +733,13 @@ Visual Studio 2019 16.7.4 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.24 15:33
-ISO_IEC_9899 9/2836   2 lof.cc1.ms86 were updated
-		      2 failures Bug #3.1
+begin 2020.09.26 16:20
+ISO_IEC_9899 7/2838   2 failures Bug #3.1
 		      3 failures Bug #6
 		      2 failures Bug #7
-C2nd 1/149 1 other    1 failure intel.dll fixed
+C2nd 0/155
 optimization 0/82
-end 2020.09.25 03:16
+end 2020.09.27 06:16
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
