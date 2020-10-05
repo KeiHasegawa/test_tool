@@ -53,17 +53,16 @@ end 2020.07.16 08:25
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.1 Debug|x64
+Visual Studio 2019 16.7.5 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.29 07:39
-ISO_IEC_9899 0/2801            Note: Bug #5 did not happen. After this test,
-                               printf_chkxx.dll test fails with Bug #5
+begin 2020.10.05 15:49
+ISO_IEC_9899 0/2803            Note: Bug #5 did not happen.
 C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 0/581
-end 2020.08.29 13:28
+optimization 1/82              verif.hcxx1.vs was updated
+ISO_IEC_14882 1/602            lof.vs was updated
+end 2020.10.05 20:21
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -420,15 +419,16 @@ end 2020.07.14 17:22
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.1 Debug|x64
+Visual Studio 2019 16.7.6 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.27 13:28
-ISO_IEC_9899 1/2842 See Bug #2
-C2nd 0/157
-optimization 0/82
-end 2020.08.27 17:19
+begin 2020.10.03 16:04
+ISO_IEC_9899 2/2842 1 failure : See Bug #2
+                    1 failure : lof updated
+C2nd 4/157          4 failures : Makefile updated
+optimization 1/82   1 failure : verif.hcc1.vs was updated
+end 2020.10.03 20:02
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
