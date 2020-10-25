@@ -57,12 +57,12 @@ Visual Studio 2019 16.7.5 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.10.05 15:49
+begin 2020.10.25.13.48
 ISO_IEC_9899 0/2803            Note: Bug #5 did not happen.
 C2nd 0/156
-optimization 1/82              verif.hcxx1.vs was updated
+optimization 0/82
 ISO_IEC_14882 1/602            lof.vs was updated
-end 2020.10.05 20:21
+end 2020.10.25.19.03
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
