@@ -345,12 +345,14 @@ Visual Studio 2019 16.7.6 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.10.15.16.03
-ISO_IEC_9899 7/2797    7 failures Bug #3.1, Bug #6, Bug #7
+begin 2020.10.25.21.54
+ISO_IEC_9899 9/2797(?)    7 failures Bug #3.1, Bug #6, Bug #7
+                          2(?) failutre : 41_ISO_IEC_9899/6_Language/3_Expressions/16_Assignment_operators/4_ptrptr/1_ok/test185.c
+			  test185.exe was created but could not exec it
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 7/602    7 failures Exception handling implementing
-end 2020.10.16.10.28
+ISO_IEC_14882 23/602(?)    7 failures Exception handling implementing
+end 2020.10.26.15.03
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
