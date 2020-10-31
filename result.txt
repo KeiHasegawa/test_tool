@@ -344,14 +344,13 @@ Visual Studio 2019 16.7.6 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.10.25.21.54
+begin 2020.10.30.18.28
 ISO_IEC_9899 7/2797        7 failures Bug #3.1, Bug #6, Bug #7
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 8/602(?)    7 failures Exception handling implementing
-                          1 failure : 43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions:./test027.exe
-			        -> first_param_offset bug @ gencode.cpp
-end 2020.10.26.15.03
+ISO_IEC_14882 3/602(?)    2 failures 0_Exception_handling/1_ok/test01{8,9}.cpp
+                          1 failure : Bug #5
+end 2020.10.31.11.33
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
