@@ -329,17 +329,20 @@ flex (2.6.4)
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.6 Debug|x64
+Visual Studio 2019 16.7.7 Debug|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.10.30.18.28
-ISO_IEC_9899 7/2797        7 failures Bug #3.1, Bug #6, Bug #7
+begin 2020.11.04.06.56
+ISO_IEC_9899 16/2798 See Bug #3.1 and #3.2 about 8 failures
+                     See Bug #6 about 3 failures
+                     See Bug #7 about 2 failures
+                     proceses (vs_wrapper) were killed
+                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 3/602(?)    2 failures 0_Exception_handling/1_ok/test{018,019}.cpp
-                          1 failure : Bug #5
-end 2020.10.31.11.33
+ISO_IEC_14882 1/604   Bug #5
+end 2020.11.05.07:35
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -683,23 +686,21 @@ end 2020.07.20 06:31
 Release|x86
 ############## No result #####################
 --------------------------
-hcxx1.exe intelxx.dll
+hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.7.7 Relase|x64
 Visual C++ 2019 00435-60000-00000-AA920
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.04.06.56
-ISO_IEC_9899 16/2798 See Bug #3.1 and #3.2 about 8 failures
-                     See Bug #6 about 3 failures
-                     See Bug #7 about 2 failures
-                     proceses (vs_wrapper) were killed
-                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
-2nd 0/154
+begin 2020.11.10.06.11
+ISO_IEC_9899 8/2838(?)        1 failure : vs_wrapper was killed
+                              2 failure : Bug #3.1
+			      3 failure : Bug #6
+			      2 failure : Bug #7
+C2nd 0/155
 optimization 0/82
-ISO_IEC_14882 1/604   Bug #5
-end 2020.11.05.07:35
+end 2020.11.10.17.34
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
