@@ -858,6 +858,6 @@ Bug #10
 hcxx1.exe printf_chkxx.dll Visual Studio Debug|x86
 43_ISO_IEC_14882/07_Declarations/5_Linkage_specifications/1_ok/test003.cpp
 
-Not happen again
+No repeatablility
 1st time : 2020.11.14
 --------------------------------------------
