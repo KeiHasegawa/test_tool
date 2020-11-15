@@ -247,8 +247,15 @@ bison (3.0.4)
 flex (2.6.4)
 ############## No result #####################
 --------------------------
-Debug|x86
-############## No result #####################
+hcxx1.exe tacsimxx.dll
+Winddows 10 64 bit
+Visual Studio 2019 16.7.7 Debug|x86
+bison (3.0.4)
+flex (2.6.4)
+ISO_IEC_9899 0/2779
+C2nd 154/155                  Makefile.tacsim.vs was updated
+optimization 0/82
+ISO_IEC_14882 1/602           Bug #9
 --------------------------
 Release|x86
 ############## No result #####################
