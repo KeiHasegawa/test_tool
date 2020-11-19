@@ -664,14 +664,14 @@ end 2020.11.09.16.08
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.17 18:46
-ISO_IEC_9899 9/2836 See Bug #3.1 and #3.2 about 9 failures
-C2nd 2/148 See Bug #4
+begin 2020.11.19.20.05
+ISO_IEC_9899 2/2838 See Bug #3.1
+C2nd 0/155
 optimization 0/82
-end 2020.07.18 02:10
+end 2020.11.20.03.35
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
