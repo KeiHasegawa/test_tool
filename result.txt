@@ -242,7 +242,7 @@ end 2020.11.06.16.52
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Relase|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.19.14.11
@@ -692,7 +692,7 @@ Release|x86
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Relase|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.10.06.11
@@ -736,7 +736,7 @@ end 2020.09.27 06:16
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Relase|x64
+Visual Studio 2019 16.6.3 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.18 05:29
