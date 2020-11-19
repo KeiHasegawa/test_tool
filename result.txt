@@ -69,12 +69,12 @@ Windows 10 64 bit
 Visual Studio 2019 16.6.3 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.18 13:22
-ISO_IEC_9899 0/2801
+begin 2020.11.17.18.06
+ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/553
-end 2020.07.18 15:58
+ISO_IEC_14882 0/605
+end 2020.11.17.21.29
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -154,15 +154,15 @@ end 2020.11.07.08.07
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.18 16:01
-ISO_IEC_9899 0/2823
+begin 2020.11.18.11.20
+ISO_IEC_9899 0/2825
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/552
-end 2020.07.18 17:05
+ISO_IEC_14882 0/604
+end 2020.11.18.12.45
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -434,14 +434,14 @@ end 2020.11.07.14.35
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.17 06:57
-ISO_IEC_9899 1/2842 See Bug #2
+begin 2020.11.18.02.07
+ISO_IEC_9899 1/2844 See Bug #2
 C2nd 0/157
 optimization 0/82
-end 2020.07.17 09:52
+end 2020.11.18.04.51
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -515,14 +515,14 @@ end 2020.11.08.05.58
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.17 12:26
-ISO_IEC_9899 0/2864
+begin 2020.11.18.08.50
+ISO_IEC_9899 0/2866
 C2nd 0/155
 optimization 0/82
-end 2020.07.17 13:37
+end 2020.11.18.10.00
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -595,14 +595,14 @@ end 2020.11.08.13.01
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Relase|x64
+Visual Studio 2019 16.6.3 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.14 16:07
-ISO_IEC_9899 0/2818
+begin 2020.11.19.11.45
+ISO_IEC_9899 0/2820
 C2nd 0/156
 optimization 0/82
-end 2020.07.17 17:59
+end 2020.11.19.11.45
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
