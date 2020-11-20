@@ -298,10 +298,15 @@ end 2020.11.04.05.04
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.11.20.04.22
+ISO_IEC_9899 2/2797           Bug #3.1
+C2nd 0/154
+optimization 0/82
+ISO_IEC_14882 0/604
+end 2020.11.20.13.48
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
