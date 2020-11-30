@@ -424,8 +424,18 @@ optimization 1/82     test019.lof.cxx1.ms86 was updated
 ISO_IEC_14882 1/604   Bug #5
 end 2020.11.16.21.00
 --------------------------
-Release|x86
-############## No result #####################
+hcxx1.exe intelxx.dll
+target 32 bit MS code
+Windows 10 64 bit
+Visual Studio 2019 16.7.7 Release|x86
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.11.27.05.23
+ISO_IEC_9899 6/2797   Bug #3.1 Bug #6 Bug #7
+C2nd 0/154
+optimization 1/82     test019.lof.cxx1.ms86 was updated
+ISO_IEC_14882 0/604
+end 2020.11.27.14.59
 --------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
@@ -457,11 +467,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.09 11:14
-ISO_IEC_9899 1/2842 See Bug #2
-C2nd 0/157
-optimization 0/82
-end 2020.08.09 13:49
+begin 2020.11.27.19.03
+ISO_IEC_9899 1/2844 See Bug #2
+C2nd 4/154          verif.hcc1.gxx was updated
+optimization 1/82   verif.hcc1.gxx was updated
+end 2020.11.27.21.47
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -550,11 +560,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.22 05:20
-ISO_IEC_9899 0/2864
+begin 2020.11.28.06.08
+ISO_IEC_9899 0/2866
 C2nd 0/155
 optimization 0/82
-end 2020.07.22 06:16
+end 2020.11.28.07.09
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -638,11 +648,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.27 05:53
-ISO_IEC_9899 0/2818
+begin 2020.11.28.21.21
+ISO_IEC_9899 2/2820        wrapper.gxx and wrapper.vs were updated
 C2nd 0/157
 optimization 0/82
-end 2020.08.27 07:22
+end 2020.11.28.22.39
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -705,12 +715,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.10 16:53
-ISO_IEC_9899 11/2838 See Bug #3.1 and #3.2 about 9 failueres
-                     2 lof were updated		    
-C2nd 2/148 See Bug #4
-optimization 1/82 1 lof were update
-end 2020.09.11 05:25
+begin 2020.11.29.13.21
+ISO_IEC_9899 6/2838   1 failure : Bug #3.1
+                      5 diff : fix verif.{hcc1,hcxx1}.gxx 
+C2nd 0/155
+optimization 1/82     1 diff : fix verif.{hcc1,hcxx1}.gxx 
+end 2020.11.29.22.16
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -777,16 +787,16 @@ end 2020.11.24.13.56
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.21.06.10
-ISO_IEC_9899 7/283     2 failure : Bug #3.1
+begin 2020.11.30.04.26
+ISO_IEC_9899 6/2838    1 failure : Bug #3.1
                        3 failure : Bug #6
                        2 failure : Bug #7
 C2nd 0/155
-optimization 1/82      test019.lof.cc1.ms86 was updated
-end 2020.11.21.13.52
+optimization 1/82      verif.{hcc1,hcxx1}.gxx were updated
+end 2020.11.30.12.44
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -820,17 +830,16 @@ end 2020.09.27 06:16
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.6.3 Release|x64
+Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.18 05:29
-ISO_IEC_9899 15/2836 See Bug #3.1 and #3.2 about 9 failures
-                     See Bug #6 about 3 failures
-                     See Bug #7 about 2 failures
-		     1 vs_wrapper process was killed
-C2nd 2/148 See Bug #4
-optimization 0/82
-end 2020.07.18 13:12
+begin 2020.11.21.06.10
+ISO_IEC_9899 7/283     2 failure : Bug #3.1
+                       3 failure : Bug #6
+                       2 failure : Bug #7
+C2nd 0/155
+optimization 1/82      test019.lof.cc1.ms86 was updated
+end 2020.11.21.13.52
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
