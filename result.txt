@@ -30,12 +30,12 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.25 09:49
-ISO_IEC_9899 0/2801
+begin 2020.12.02.20.13
+ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/581(?) See Bug #5
-end 2020.08.25 12:55
+ISO_IEC_14882 0/605
+end 2020.12.02.23.06
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -43,12 +43,12 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.16 05:51
-ISO_IEC_9899 0/2801
+begin 2020.12.05.06.49
+ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/553
-end 2020.07.16 08:25
+ISO_IEC_14882 0/605
+end 2020.12.05.09.52
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -131,24 +131,24 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.23 17:46
-ISO_IEC_9899 0/2823
+begin 2020.12.02.17.39
+ISO_IEC_9899 0/2825
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/566
-end 2020.07.23 19:02
+ISO_IEC_14882 0/604
+end 2020.12.02.18.52
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.16 20:03
-ISO_IEC_9899 0/2823
+begin 2020.12.05.10.05
+ISO_IEC_9899 0/2825
 C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/552
-end 2020.07.17 03:17
+ISO_IEC_14882 0/604
+end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -227,24 +227,24 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.27 08:35
-ISO_IEC_9899 0/2777
+begin 2020.12.02.15.06
+ISO_IEC_9899 0/2779
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/578(?) See Bug #5
-end 2020.08.27 10:15
+ISO_IEC_14882 1/602 See Bug #5
+end 2020.12.02.16.51
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.17 03:22
-ISO_IEC_9899 0/2777
+begin 2020.12.05.12.38
+ISO_IEC_9899 0/2779
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/550(?) See Bug #1
-end 2020.07.17 04:48
+ISO_IEC_14882 1/602    1 failure : Bug #1
+end 2020.12.05.14.55
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
@@ -299,7 +299,16 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 12.02.01.16
+ISO_IEC_9899 8/2797       6 processes were killed
+                          1 fail : Bug #3.1
+			  1 diff :
+			  3_Expressions/2_Postfix_operators/2_Function_calls/3_call/test100.c
+			  Note that test099.exe cannot be build at this time.
+			  (because of killed).
+C2nd 2/154                2 processes were killed
+optimization 0/82
+ISO_IEC_14882 1/604       1 process was killed
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -369,7 +378,15 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.12.01.11.58
+ISO_IEC_9899 7/2797  1 process was killed
+                     See Bug #3.1 about 2 failures
+                     See Bug #6 about 3 failures
+                     See Bug #7 about 2 failures
+C2nd 0/154
+optimization 1/82    diff test019
+ISO_IEC_14882 0/604
+end 12.01.23.30
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -480,10 +497,10 @@ g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.14 14:31
-ISO_IEC_9899 1/2842 See Bug #2
+ISO_IEC_9899 1/2844 See Bug #2
 C2nd 0/157
 optimization 0/82
-end 2020.07.14 17:22
+end 2020.12.03.07.22
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -571,11 +588,11 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.14 18:24
+begin 2020.12.03.20.18
 ISO_IEC_9899 0/2864
 C2nd 0/155
 optimization 0/82
-end 2020.07.14 19.27
+end 2020.12.03.21.18
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -659,11 +676,11 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.14 20:58
-ISO_IEC_9899 0/2818
+begin 2020.12.04.05.29
+ISO_IEC_9899 0/2820
 C2nd 0/157
 optimization 0/82
-end 2020.07.14 22:13
+end 2020.12.04.06.54
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -729,11 +746,10 @@ g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.15 06:29
-ISO_IEC_9899 9/2836(?) See Bug #3.1 and #3.2 about 8 failueres
-                    41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operator/2_Function_calls/4_param/test046.c is pass ( unexpected )
-C2nd 2/148 See Bug #4
+ISO_IEC_9899 1/2838  1 failure : #3.1
+C2nd 0/155
 optimization 0/82
-end 2020.07.15 15:39
+end 2020.12.04.16.53
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -804,14 +820,13 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.08.10 07:18
-ISO_IEC_9899 13/2836 See Bug #3.1 and #3.2 about 8 failures
+begin 2020.12.04.19.54
+ISO_IEC_9899 6/2836  See Bug #3.1 about 1 failure
                      See Bug #6 about 3 failures
                      See Bug #7 about 2 failures
-                     41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c is pass ( unexpected )
-C2nd 2/148 See Bug #4
-optimization 0/82
-end 2020.07.15 15:42
+C2nd 0/155
+optimization 1/82    1 diff : test019.c
+end 2020.12.05.06.28
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -848,7 +863,9 @@ Visual Studio 2019 16.7.7 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.13.03.30
-ISO_IEC_9899 8/2838           8 failures : #3.1 and #3.2
+ISO_IEC_9899 6/2838           1 failure : Bug #3.1
+                              3 failures : Bug #6
+			      2 failures : Bug #7
 C2nd 0/155
 optimization 1/82             test019.lof.cc1.ms86 was updated
 end 2020.11.13.15.48
@@ -925,30 +942,6 @@ Bug #3.1
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
 41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c
 Error for the generated assembler source line is too long.
---------------------------------------
-Resolved 2020.09.16
-Bug #3.2
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/3_ok
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/5_ok
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/2_Linkages_of_identifiers/1_ok
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/3_mem
-41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/4_Storage_durations_of_objects/2_ok/4_mem
-41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/3_ok
-41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/5_ok
-
-Link.exe error-reports that `printf' is multiple defined.
-Same reason with Bug #4.
---------------------------------------
-Bug #4
-hcc1.exe intel.dll target MS code
-42_C2nd/test{109,127}.c
-LINK.exe error-reports that `sprintf_s' is multiple defined at
-test{109,127}.obj and library(MSVCRTD.lib). Here, `sprintf_s' inline
-function-definition exists at include file
-(D:/Windows Kits/10/Include/10.0.17763.0/ucrt/stdio.h).
-For inline function `sprintf_s', hcc1.exe and intel.dll generate
-static function code for `sprintf_s' because hcc1.exe cannot do inline
-expansion. (i.e: no `PUBLIC' pseudo-instruction for `sprintf_s')
 --------------------------------------
 Bug #5
 hcxx1.exe intelxx.dll Windows 10 g++ (VC++ also happened)
