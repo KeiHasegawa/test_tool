@@ -316,7 +316,14 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 12.06.03.51
+ISO_IEC_9899 19/2797    1 process was killedo
+                        1 failure : Bug #3.1
+			17 failure : vcxproj retarget
+C2nd 1/148              retarget vcxproj
+optimization 0/82
+ISO_IEC_14882 0/604
+end 12.06.17.26
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -394,7 +401,16 @@ Windows 10 64 bit
 g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-############## No result #####################
+begin 2020.12.07.04.34
+ISO_IEC_9899 11/2797  4 processes were killed
+                      1 diff lof.ms86 was updated
+                      See Bug #3.1 about 1 failures
+                      See Bug #6 about 3 failures
+                      See Bug #7 about 2 failures
+C2nd 0/154
+optimization 1/82    diff test019
+ISO_IEC_14882 0/604
+end 12.07.16.27
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
