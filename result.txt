@@ -30,12 +30,14 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.02.20.13
+begin 2020.12.28.11.23
 ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/605
-end 2020.12.02.23.06
+ISO_IEC_14882 1/677         1 failure :
+                            43_ISO_IEC_14882/14_Templates/0_Templates/
+			    test196.cpp was fixed
+end 2020.12.28.14.35
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -53,15 +55,15 @@ end 2020.12.05.09.52
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.05.20.57
+begin 2020.12.20.00.00
 ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 0/605            Note: Bug #5 did not happen.
-end 2020.11.06.01.54
+ISO_IEC_14882 3/605            Bug #15
+end 2020.12.20.05.09
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -79,15 +81,15 @@ end 2020.11.17.21.29
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.07.20 22:57
+begin 2020.12.16.05.38
 ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
 ISO_IEC_14882 0/605
-end 2020.11.14.10.21
+end 2020.12.16.10.57
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -95,12 +97,12 @@ Windows 10 64 bit
 Visual Studio 2019 16.7.7 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.25.12.29
+begin 2020.12.11.04.22
 ISO_IEC_9899 0/2803
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 1/605          Bug #11
-end 2020.11.25.15.49
+ISO_IEC_14882 0/605
+end 2020.12.11.07.46
 --------------------------
 hcxx1.exe printf_chkxx.dll
 vine linux x86
@@ -152,15 +154,15 @@ end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.07.05.16
+begin 2020.12.20.07.15
 ISO_IEC_9899 0/2825
-C2nd 1/150              verif.hcxx1.vs was updated
+C2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/604     Note : Bug #5 did not happen
-end 2020.11.07.08.07
+ISO_IEC_14882 0/604
+end 2020.12.20.10.17
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -176,27 +178,27 @@ end 2020.11.18.12.45
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.14.22.47
-ISO_IEC_9899 0/2825
-C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 1/604(?)         Bug #10 5_Linkage_specifications/1_ok/test003.cpp
-end 2020.11.15.01.41
---------------------------
-hcxx1.exe printf_chkxx.dll
-Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
-bison (3.0.4)
-flex (2.6.4)
-begin 2020.11.26.05.04
+begin 2020.12.16.11.22
 ISO_IEC_9899 0/2825
 C2nd 0/154
 optimization 0/82
 ISO_IEC_14882 0/604
-end 2020.11.26.06.35
+end 2020.12.16.14.16
+--------------------------
+hcxx1.exe printf_chkxx.dll
+Windows 10 64 bit
+Visual Studio 2019 16.8.2 Release|x86
+bison (3.0.4)
+flex (2.6.4)
+begin 2020.12.11.18.13
+ISO_IEC_9899 0/2825
+C2nd 0/154
+optimization 0/82
+ISO_IEC_14882 1/604   1 failure : Bug #5
+end 2020.12.11.19.41
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
@@ -248,16 +250,15 @@ end 2020.12.05.14.55
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.06.03.46
+begin 2020.12.20.10.47
 ISO_IEC_9899 0/2779
-C2nd 1/149              verif.hcxx1.vs was updated
+C2nd 0/155
 optimization 0/82
-ISO_IEC_14882 2/602(?)  1 failure : Bug #9
-                        1 failure : tacsimxx.dll was fixed
-end 2020.11.06.16.52
+ISO_IEC_14882 1/602  1 diff : Bug #9.2                        
+end 2020.12.20.20.06
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
@@ -273,25 +274,27 @@ end 2020.11.19.16.31
 --------------------------
 hcxx1.exe tacsimxx.dll
 Winddows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
+begin 2020.12.17.04.31
 ISO_IEC_9899 0/2779
-C2nd 154/155                  Makefile.tacsim.vs was updated
+C2nd 0/155
 optimization 0/82
 ISO_IEC_14882 1/602           Bug #9
+end 2020.12.17.15.00
 --------------------------
 hcxx1.exe tacsimxx.dll
 Winddows 10 64 bit
 Visual Studio 2019 16.7.7 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.26.07.51
+begin 2020.12.12.06.06
 ISO_IEC_9899 0/2779
 C2nd 0/155
 optimization 0/82
-ISO_IEC_14882 0/602
-end 2020.11.26.10.23
+ISO_IEC_14882 2/602           Bug #13, Bug #14
+end 2020.12.12.08.41
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -301,7 +304,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 12.02.01.16
 ISO_IEC_9899 8/2797       6 processes were killed
-                          1 fail : Bug #3.1
+                          1 fail : Bug #3
 			  1 diff :
 			  3_Expressions/2_Postfix_operators/2_Function_calls/3_call/test100.c
 			  Note that test099.exe cannot be build at this time.
@@ -318,7 +321,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 12.06.03.51
 ISO_IEC_9899 19/2797    1 process was killedo
-                        1 failure : Bug #3.1
+                        1 failure : Bug #3
 			17 failure : vcxproj retarget
 C2nd 1/148              retarget vcxproj
 optimization 0/82
@@ -328,16 +331,16 @@ end 12.06.17.26
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.6 Debug|x64
+Visual Studio 2019 16.8.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.03.11.47
-ISO_IEC_9899 8/2798    2 failures Bug #3.1
-                       6 processes were killed
+begin 2020.12.21.03.53
+ISO_IEC_9899 7/2798    2 failures Bug #3
+                       5 processes were killed
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/602   Bug #5 did not happen
-end 2020.11.04.05.04
+ISO_IEC_14882 0/604
+end 2020.12.21.21.25
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -346,7 +349,7 @@ Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.20.04.22
-ISO_IEC_9899 2/2797           Bug #3.1
+ISO_IEC_9899 2/2797           Bug #3
 C2nd 0/154
 optimization 0/82
 ISO_IEC_14882 0/604
@@ -355,29 +358,30 @@ end 2020.11.20.13.48
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.15.22.08
-ISO_IEC_9899 1/2797   Bug #3.1
+begin 2020.12.17.16.47
+ISO_IEC_9899 1/2797   Bug #3
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 0/604   Bug #5 did not happen
-end 2020.11.16.15.09
+ISO_IEC_14882 1/604   Bug #5
+end 2020.12.18.10.19
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.26.11.24
-ISO_IEC_9899 2/2797   1 failure : Bug #3.1
-                      1 process was killed
+begin 2020.12.14.03.10
+ISO_IEC_9899 5/2797   1 failure : Bug #3
+                      3 process was killed
+		      1 diff : test.lof.cxx1.ms was updated
 2nd 0/154
 optimization 0/82
-ISO_IEC_14882 1/604   Bug #12
-end 2020.11.26.20.49
+ISO_IEC_14882 0/604
+end 2020.12.14.13.17
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -387,7 +391,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 2020.12.01.11.58
 ISO_IEC_9899 7/2797  1 process was killed
-                     See Bug #3.1 about 2 failures
+                     See Bug #3 about 2 failures
                      See Bug #6 about 3 failures
                      See Bug #7 about 2 failures
 C2nd 0/154
@@ -404,7 +408,7 @@ flex (2.6.4)
 begin 2020.12.07.04.34
 ISO_IEC_9899 11/2797  4 processes were killed
                       1 diff lof.ms86 was updated
-                      See Bug #3.1 about 1 failures
+                      See Bug #3 about 1 failures
                       See Bug #6 about 3 failures
                       See Bug #7 about 2 failures
 C2nd 0/154
@@ -415,19 +419,18 @@ end 12.07.16.27
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.04.06.56
-ISO_IEC_9899 16/2798 See Bug #3.1 about 2 failures
+begin 2020.12.22.04.52
+ISO_IEC_9899 8/2798  See Bug #3 about 2 failures
                      See Bug #6 about 3 failures
                      See Bug #7 about 2 failures
-     		     1 test program cannot be executed : 2 failures
-                     7 proceses (vs_wrapper) were killed
+                     1 proceses (vs_wrapper) were killed
 2nd 0/154
-optimization 0/82
-ISO_IEC_14882 1/604   Bug #5
-end 2020.11.05.07:35
+optimization 1/82    1 diff : test019
+ISO_IEC_14882 6/604  6 proceses (vs_wrapper) were killed
+end 2020.12.22.22.32
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -436,7 +439,7 @@ Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 11.22.04.40
-ISO_IEC_9899 7/2838     2 failure : Bug #3.1
+ISO_IEC_9899 7/2838     2 failure : Bug #3
                         3 failure : Bug #6
                         2 failure : Bug #7
 C2nd 0/154
@@ -447,28 +450,29 @@ end 11.22.14.17
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.16.21.00
-ISO_IEC_9899 6/2797   Bug #3.1 Bug #6 Bug #7
+begin 2020.12.19.05.11
+ISO_IEC_9899 7/2797   Bug #3 Bug #6 Bug #7
+                      1 process was killed
 C2nd 0/154
-optimization 1/82     test019.lof.cxx1.ms86 was updated
-ISO_IEC_14882 1/604   Bug #5
-end 2020.11.16.21.00
+optimization 0/82
+ISO_IEC_14882 2/604   2 processes were killed
+end 2020.12.19.23.15
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.27.05.23
-ISO_IEC_9899 6/2797   Bug #3.1 Bug #6 Bug #7
+begin 2020.12.15.04.34
+ISO_IEC_9899 6/2797   Bug #3 Bug #6 Bug #7
 C2nd 0/154
-optimization 1/82     test019.lof.cxx1.ms86 was updated
+optimization 0/82
 ISO_IEC_14882 0/604
-end 2020.11.27.14.59
+end 2020.12.15.14.40
 --------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
@@ -521,14 +525,14 @@ end 2020.12.03.07.22
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.07.10.51
-ISO_IEC_9899 1/2844 1 failure : See Bug #2
+begin 2021.02.28.13.50
+ISO_IEC_9899 1/2844            1 diff : See Bug #2
 C2nd 0/157
-optimization 0/82
-end 2020.11.07.14.35
+optimization 0/95
+end 2021.02.28.18.17
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -557,14 +561,14 @@ end 2020.11.11.00.14
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.22.18.26
+begin 2020.12.08.06.14
 ISO_IEC_9899 1/2844 See Bug #2
 C2nd 0/157
 optimization 0/82
-end 2020.11.22.21.09
+end 12.08.09.07
 --------------------------
 hcc1.exe printf_chk.dll
 vine linux x86
@@ -612,14 +616,14 @@ end 2020.12.03.21.18
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.08.03.45
+begin 2021.02.28.11.08
 ISO_IEC_9899 0/2866
-C2nd 1/151             verif.hcc1.vs was updated
-optimization 0/82
-end 2020.11.08.05.58
+C2nd 0/155
+optimization 0/95
+end 2021.02.28.13.31
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -645,14 +649,14 @@ end 2020.11.11.06.30
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.23.05.55
+begin 2020.12.08.10.04
 ISO_IEC_9899 0/2866
 C2nd 0/155
 optimization 0/82
-end 2020.11.23.07.06
+end 2020.12.08.11.17
 --------------------------
 hcc1.exe tacsim.dll
 vine linux x86
@@ -700,14 +704,14 @@ end 2020.12.04.06.54
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.08.06.41
+begin 2021.03.01.06.18
 ISO_IEC_9899 0/2820
-C2nd 1/150                verif.hcc1.vs was updated
-optimization 0/82
-end 2020.11.08.13.01
+C2nd 0/156
+optimization 0/95
+end 2021.03.01.13.39
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -733,14 +737,14 @@ end 2020.11.11.15.47
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.23.11.33
+begin 2020.12.08.11.39
 ISO_IEC_9899 0/2820
-C2nd 155/156(?)              Makefile.tacsim.vs s were updated
+C2nd 0/156
 optimization 0/82
-end 2020.11.23.13.31
+end 2020.12.08.13.37
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -749,7 +753,7 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.29.13.21
-ISO_IEC_9899 6/2838   1 failure : Bug #3.1
+ISO_IEC_9899 6/2838   1 failure : Bug #3
                       5 diff : fix verif.{hcc1,hcxx1}.gxx 
 C2nd 0/155
 optimization 1/82     1 diff : fix verif.{hcc1,hcxx1}.gxx 
@@ -762,7 +766,7 @@ g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.07.15 06:29
-ISO_IEC_9899 1/2838  1 failure : #3.1
+ISO_IEC_9899 1/2838  1 failure : #3
 C2nd 0/155
 optimization 0/82
 end 2020.12.04.16.53
@@ -770,14 +774,14 @@ end 2020.12.04.16.53
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Debug|x64
+Visual Studio 2019 16.8.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.09.04.29
-ISO_IEC_9899 2/2838    2 failures : Bug #3.1
+begin 2021.03.01.14.11
+ISO_IEC_9899 2/2838    2 failures : Bug #3
 C2nd 0/155
-optimization 0/82
-end 2020.11.09.16.08
+optimization 0/95
+end 2021.03.02.03.51
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -786,7 +790,7 @@ Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.19.20.05
-ISO_IEC_9899 2/2838 See Bug #3.1
+ISO_IEC_9899 2/2838 See Bug #3
 C2nd 0/155
 optimization 0/82
 end 2020.11.20.03.35
@@ -798,7 +802,7 @@ Visual Studio 2019 16.7.7 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.12.05.00
-ISO_IEC_9899 3/2838    1 failure : Bug #3.1
+ISO_IEC_9899 3/2838    1 failure : Bug #3
                        2 processes (vs_wrapper) were killed
 C2nd 0/155
 optimization 0/82
@@ -807,14 +811,16 @@ end 2020.11.12.17.39
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.24.06.22
-ISO_IEC_9899 1/2838    1 failure : Bug #3.1
-C2nd 0/155
+begin 2020.12.09.04.20
+ISO_IEC_9899 3/2838    1 failure : Bug #3
+                       1 failure : test.lof.cc1.ms86 was updated
+		       1 process was killed
+C2nd 1/149             1 failure : calc.vcxproj was updated
 optimization 0/82
-end 2020.11.24.13.56
+end 2020.12.09.12.26
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -823,7 +829,7 @@ g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.30.04.26
-ISO_IEC_9899 6/2838    1 failure : Bug #3.1
+ISO_IEC_9899 6/2838    1 failure : Bug #3
                        3 failure : Bug #6
                        2 failure : Bug #7
 C2nd 0/155
@@ -837,7 +843,7 @@ g++ (9.3.0) -O3
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.12.04.19.54
-ISO_IEC_9899 6/2836  See Bug #3.1 about 1 failure
+ISO_IEC_9899 6/2836  See Bug #3 about 1 failure
                      See Bug #6 about 3 failures
                      See Bug #7 about 2 failures
 C2nd 0/155
@@ -847,16 +853,17 @@ end 2020.12.05.06.28
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.4 Debug|x64
+Visual Studio 2019 16.8.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.09.26 16:20
-ISO_IEC_9899 7/2838   2 failures Bug #3.1
+begin 2021.03.02.04.51
+ISO_IEC_9899 8/2838   2 failures Bug #3
 		      3 failures Bug #6
 		      2 failures Bug #7
+		      1 process was killed
 C2nd 0/155
-optimization 0/82
-end 2020.09.27 06:16
+optimization 1/95     1 diff
+end 2021.03.02.04.51
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -865,7 +872,7 @@ Visual Studio 2019 16.7.7 Release|x64
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.21.06.10
-ISO_IEC_9899 7/283     2 failure : Bug #3.1
+ISO_IEC_9899 7/283     2 failure : Bug #3
                        3 failure : Bug #6
                        2 failure : Bug #7
 C2nd 0/155
@@ -879,7 +886,7 @@ Visual Studio 2019 16.7.7 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.11.13.03.30
-ISO_IEC_9899 6/2838           1 failure : Bug #3.1
+ISO_IEC_9899 6/2838           1 failure : Bug #3
                               3 failures : Bug #6
 			      2 failures : Bug #7
 C2nd 0/155
@@ -889,16 +896,17 @@ end 2020.11.13.15.48
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.8.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.24.18.29
-ISO_IEC_9899 6/2838           1 failure : Bug #3.1
+begin 2020.12.10.19.11
+ISO_IEC_9899 6/2838           1 failure : Bug #3
                               3 failures : Bug #6
 			      2 failures : Bug #7
+			      1 diff : test.lof.cc1.ms86 was updated
 C2nd 0/155
-optimization 1/82             test019.lof.cc1.ms86 was updated
-end 2020.11.25.11.46
+optimization 0/82
+end 2020.12.11.03.25
 --------------------------
 Bug #1
 
@@ -953,7 +961,7 @@ Expected log is outputed.
 --------------------------------------
 hcc1.exe intel.dll target MS code
 
-Bug #3.1
+Bug #3
 
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
 41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c
@@ -998,6 +1006,11 @@ Bug #9
 hcxx1.exe tacsimxx.dll vine linux, Visual Studio
 
 12_Special_member_functions/0_Special_member_functions/test050.cpp
+tes050.exe runtime error
+
+Bug #9.2
+first time : 12.20.10.47
+Not runtime error, but difference log
 --------------------------------------
 Bug #10
 hcxx1.exe printf_chkxx.dll Visual Studio Debug|x86
@@ -1024,3 +1037,54 @@ Release|x86 only
 
 cause sytax error. No repeatablility.
 1st time : 2020.11.26.11.24
+---------------------------------------------
+Bug #13
+
+Release|x86 tacsimxx.dll Only
+
+43_ISO_IEC_14882/10_Derived_classes/4_Abstract_classes/1_ok:hcxx1.exe test002.cpp
+
+cause sytax error. No repeatablility. No repeatablility.
+---------------------------------------------
+Bug #14
+
+Release|x86 tacsimxx.dll Only
+
+43_ISO_IEC_14882/12_Special_member_functions/6_Initialization/2_Initializing_bases_and_members/1_ok/test003.cpp
+
+cause sytax error. No repeatablility.
+---------------------------------------------
+Bug #15
+
+First time : 2020.12.20.05.09
+Debug|x64 
+No repeatablility. 16.8.2
+43_ISO_IEC_14882/14_Templates/0_Templates/test{030,101,112}.cpp
+hcxx1.exe runtime error
+---------------------------------------------
+Bug #16
+First time 12.28.11.23
+g++ (9.3.0) -g
+
+43_ISO_IEC_14882/14_Templates/0_Templates/test196.cpp
+
+% ./test196.exe 
+a = 1 b = 2 c = 3
+a.m = -13452 b.m = -13456
+%
+
+Repeatability exists.
+_Z.sub.RK1XRK1X:
+
+	// param .var0x800103300
+	movl	-28(%rbp), %eax
+	movl	%eax, -12(%rbp)
+	leaq	-12(%rbp), %rax           <---- ‚±‚±‚ªŠÔˆá‚¢
+	movq	%rax, %rdx
+	// param .var0x8001031f0
+	movl	-32(%rbp), %eax
+	movl	%eax, -16(%rbp)
+	leaq	-16(%rbp), %rax           <---- ‚±‚±‚ªŠÔˆá‚¢
+	movq	%rax, %r8
+ 	// call printf
+
