@@ -55,15 +55,15 @@ end 2020.12.05.09.52
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x64
+Visual Studio 2019 16.9.0 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.20.00.00
+begin 2021.03.04.04.24
 ISO_IEC_9899 0/2803
 C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 3/605            Bug #15
-end 2020.12.20.05.09
+optimization 0/95
+ISO_IEC_14882 1/891            Bug #15
+end 2021.03.04.10.17
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -154,15 +154,16 @@ end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x64
+Visual Studio 2019 16.9.0 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.20.07.15
+begin 2021.03.04.12.20
 ISO_IEC_9899 0/2825
 C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/604
-end 2020.12.20.10.17
+optimization 0/95
+ISO_IEC_14882 5(?)/890          1 test is fixed
+	      			4 tests are being invested
+end 2021.03.04.15.37
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -1058,7 +1059,7 @@ Bug #15
 
 First time : 2020.12.20.05.09
 Debug|x64 
-No repeatablility. 16.8.2
+No repeatablility. 16.8.2 and 16.9.0
 43_ISO_IEC_14882/14_Templates/0_Templates/test{030,101,112}.cpp
 hcxx1.exe runtime error
 ---------------------------------------------
