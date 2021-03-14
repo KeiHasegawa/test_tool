@@ -113,7 +113,7 @@ begin 2021.03.15.02.57
 ISO_IEC_9899 0/2840
 C2nd 0/154
 optimization 0/106
-ISO_IEC_14882 2/915(?)
+ISO_IEC_14882 2/915(?)            Bug #17
 end 2021.03.15.03.05
 --------------------------
 hcxx1.exe printf_chkxx.dll
@@ -206,12 +206,14 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.09.07 05:00
-ISO_IEC_9899 0/2779
+begin 2020.03.15.04.09
+ISO_IEC_9899 0/2794
 C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 1/587(?) See Bug #9
-end 2020.09.07 05:12
+optimization 0/106
+ISO_IEC_14882 6/915         1 failure  : Bug #18
+                            4 failures : Bug #19
+			    1 failure  : Bug #20
+end 2021.03.15.04.21
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
@@ -1091,4 +1093,33 @@ _Z.sub.RK1XRK1X:
 	leaq	-16(%rbp), %rax           <---- ここが間違い
 	movq	%rax, %r8
  	// call printf
+
+-------------------------------------------------
+Bug #17
+test329.cpp
+test335.cpp
+hcxx1.exe --generator printf_chkxx.dll 
+not_implemented error occured.
+-------------------------------------------------
+Bug #18
+43_ISO_IEC_14882/14_Templates/0_Templates/test243.cpp
+hcxx1.exe: allocate.cpp:300: void tacsim::allocate::set_value(std::pair<int, cxx_compiler::var*>, void*): Assertion `u->isconstant()' failed.
+-------------------------------------------------
+Bug #19
+43_ISO_IEC_14882/14_Templates/0_Templates/test255.cpp
+test353.cpp, test355.cpp, test379.cpp
+
+hcxx1.exe: allocate.cpp:204: void tacsim::allocate::usr2(cxx_compiler::usr*): Assertion `size' failed.
+---------------------------------------------------------
+Bug #20
+43_ISO_IEC_14882/14_Templates/0_Templates/test406.cppp
+test406.cpp: 函数 `f' :
+test406.cpp:17: 警告: 右辺値参照されるべきところで左辺値が指定されています.
+dos2unix.csh test406.log
+wdog.exe -v diff test406.log test406.lof
+1c1
+< b = 138485104
+---
+> b = 1234
+
 
