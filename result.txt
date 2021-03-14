@@ -113,7 +113,7 @@ begin 2021.03.15.02.57
 ISO_IEC_9899 0/2840
 C2nd 0/154
 optimization 0/106
-ISO_IEC_14882 2/915(?)            Bug #17
+ISO_IEC_14882 2/915                   2 tests were updated
 end 2021.03.15.03.05
 --------------------------
 hcxx1.exe printf_chkxx.dll
@@ -1094,12 +1094,6 @@ _Z.sub.RK1XRK1X:
 	movq	%rax, %r8
  	// call printf
 
--------------------------------------------------
-Bug #17
-test329.cpp
-test335.cpp
-hcxx1.exe --generator printf_chkxx.dll 
-not_implemented error occured.
 -------------------------------------------------
 Bug #18
 43_ISO_IEC_14882/14_Templates/0_Templates/test243.cpp
