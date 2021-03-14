@@ -109,12 +109,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.09.07 04:51
-ISO_IEC_9899 0/2825
+begin 2021.03.15.02.57
+ISO_IEC_9899 0/2840
 C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/589
-end 2020.09.07 04.58
+optimization 0/106
+ISO_IEC_14882 2/915(?)
+end 2021.03.15.03.05
 --------------------------
 hcxx1.exe printf_chkxx.dll
 vine linux x86
