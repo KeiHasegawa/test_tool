@@ -55,15 +55,15 @@ end 2020.12.05.09.52
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.9.0 Debug|x64
+Visual Studio 2019 16.9.1 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.04.04.24
-ISO_IEC_9899 0/2803
+begin 2021.03.16.07.14
+ISO_IEC_9899 0/2818
 C2nd 0/156
-optimization 0/95
-ISO_IEC_14882 1/891            Bug #15
-end 2021.03.04.10.17
+optimization 0/106
+ISO_IEC_14882 1/914            Bug #5
+end 2021.03.16.13.23
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -1118,4 +1118,35 @@ wdog.exe -v diff test406.log test406.lof
 > b = 1234
 
 => There is a problem at `test406.cpp' not tacsimxx.dll
+------------------------------------------------------------
+Bug #21
+Windows 64 bit
+Target GNU code
+Visual Studio 2019 16.9.1 Debug|x64
+1st time 03.15.04.04
+
+~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test203.cpp
+hcxx1.exe error.
+
+Run under control of Visual Studio debugger linke:
+
+d:/home/khasegawa/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test203.i --generator d:/home/khasegawa/lang/30_intel/src/x64/DebugCXX/intel.dll
+
+But no repeatablility
+
+After test, same operation were done like bellow:
+
+> hcxx1.exe -o test203.s test203.i --generator-option \( --debug \) 
+> g++ -g -o test203.exe test203.s
+> ./test203.exe > test203.log
+> unix2dos test203.log
+> diff test203.lo{g,f}
+------------------------------------------------------------
+Bug #22
+Windows 64 bit
+Target GNU code
+~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test433.cpp
+hcxx1.exe not_implemented
+
+
 
