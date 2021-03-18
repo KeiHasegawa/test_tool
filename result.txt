@@ -154,16 +154,18 @@ end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.9.0 Debug|x64
+Visual Studio 2019 16.9.1 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.04.12.20
-ISO_IEC_9899 0/2825
+begin 2021.03.16.14.18
+ISO_IEC_9899 0/2842
 C2nd 0/154
-optimization 0/95
-ISO_IEC_14882 5(?)/890          1 test is fixed
-	      			4 tests are being invested
-end 2021.03.04.15.37
+optimization 0/106
+ISO_IEC_14882 5/915         2 tests were updated
+                            2 processes were killed -> assertion error
+			                            -> fixed
+	                    1 fail : Bug #21
+end 2021.03.17.07.46
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -253,15 +255,15 @@ end 2020.12.05.14.55
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x64
+Visual Studio 2019 16.9.1 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.20.10.47
-ISO_IEC_9899 0/2779
+begin 2021.03.17.14.10
+ISO_IEC_9899 0/2780
 C2nd 0/155
-optimization 0/82
-ISO_IEC_14882 1/602  1 diff : Bug #9.2                        
-end 2020.12.20.20.06
+optimization 0/106
+ISO_IEC_14882 1/918                1 diff : Bug #9.2
+end 2021.03.18.01.23
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
@@ -1125,6 +1127,8 @@ Target GNU code
 Visual Studio 2019 16.9.1 Debug|x64
 1st time 03.15.04.04
 
+See also ~/lang/21_hcxx1/src/memo2
+
 ~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test203.cpp
 hcxx1.exe error.
 
@@ -1147,6 +1151,5 @@ Windows 64 bit
 Target GNU code
 ~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test433.cpp
 hcxx1.exe not_implemented
-
 
 
