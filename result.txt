@@ -55,15 +55,16 @@ end 2020.12.05.09.52
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.9.1 Debug|x64
+Visual Studio 2019 16.9.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.22.13.10
-ISO_IEC_9899 1/2821        lof was updated
+begin 2021.03.23.09.19
+ISO_IEC_9899 0/2821
 C2nd 0/156
 optimization 0/106
-ISO_IEC_14882 2/921(?)            Bug #5
-end 2021.03.18.20.26
+ISO_IEC_14882 6/933            1 failure  : Bug #5
+                               5 failures : Bug #23
+end 2021.03.23.15.54
 ---------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -154,18 +155,15 @@ end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.9.1 Debug|x64
+Visual Studio 2019 16.9.2 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.16.14.18
-ISO_IEC_9899 0/2842
+begin 2021.03.24.08.21
+ISO_IEC_9899 0/2843
 C2nd 0/154
 optimization 0/106
-ISO_IEC_14882 5/915         2 tests were updated
-                            2 processes were killed -> assertion error
-			                            -> fixed
-	                    1 fail : Bug #21
-end 2021.03.17.07.46
+ISO_IEC_14882 1/938         1 failure : Bug #5
+end 2021.03.24.12.04
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -1155,4 +1153,11 @@ Target GNU code
 ~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test433.cpp
 hcxx1.exe not_implemented
 
+------------------------------------------------------------
+Bug #23
+dynamic_cast test
 
+43_ISO_IEC_14882/05_Expressions/02_Postfix_expressions/7_Dynamic_cast/1_ok
+test002.cpp, test007.cpp : PASS at vine linux but FAIL at Windows
+
+test008.cpp, test009.cpp, test010.cpp : FAIL implementation not complete
