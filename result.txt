@@ -206,14 +206,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2020.03.15.04.09
-ISO_IEC_9899 0/2794
-C2nd 0/156
+begin 2021.03.25.05.51
+ISO_IEC_9899 0/2780
+C2nd 0/155
 optimization 0/106
-ISO_IEC_14882 6/915         1 failure  : Bug #18 => fix tacsimxx.dll
-                            4 failures : Bug #19 => fix tacsimxx.dll
-			    1 failure  : Bug #20
-end 2021.03.15.04.21
+ISO_IEC_14882 3/942		See memo2 and dynamic_cast_bug.txt
+end 2021.03.25.06.03
 --------------------------
 hcxx1.exe tacsimxx.dll
 vine linux x86
@@ -1110,16 +1108,6 @@ hcxx1.exe: allocate.cpp:204: void tacsim::allocate::usr2(cxx_compiler::usr*): As
 
 => resolved fix tacsimxx.dll
 ---------------------------------------------------------
-Bug #20
-43_ISO_IEC_14882/14_Templates/0_Templates/test406.cppp
-wdog.exe -v diff test406.log test406.lof
-1c1
-< b = 138485104
----
-> b = 1234
-
-=> There is a problem at `test406.cpp' not tacsimxx.dll
-------------------------------------------------------------
 Bug #21
 Windows 64 bit
 Target GNU code
@@ -1131,7 +1119,7 @@ See also ~/lang/21_hcxx1/src/memo2
 ~/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test203.cpp
 hcxx1.exe error.
 
-Run under control of Visual Studio debugger linke:
+Run under control of Visual Studio debugger like:
 
 d:/home/khasegawa/lang/43_ISO_IEC_14882/14_Templates/0_Templates/test203.i --generator d:/home/khasegawa/lang/30_intel/src/x64/DebugCXX/intel.dll
 
