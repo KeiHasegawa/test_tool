@@ -263,7 +263,7 @@ C2nd 0/155
 optimization 0/106
 ISO_IEC_14882 4/936                1 diff : Bug #9.2
                                    2 runtime erorr and 1 diff :
-				     See dynamic_cast_bug.txt
+				   See dynamic_cast_bug.txt
 end 2021.03.28.18.54
 --------------------------
 hcxx1.exe tacsimxx.dll
@@ -1178,3 +1178,25 @@ tacsimxx.dll Windows Visual Studio Build
 0                      <--- 3 is expected result
 `test06' called
 0                      <--- 3 is expected result
+
+このバグは Windows 版の tacsim で dynamic_cast の対応が必要だったため
+以下の修正を入れた:
+
+#ifdef _MSC_VER
+extern "C" DLL_EXPORT
+int generator_ptrdiff_type()
+{
+    using namespace COMPILER;
+#ifdef WIN32
+    return (int)type::INT;
+#else // WIN32
+    return (int)type::LONGLONG;
+#endif // WIN32
+}
+#endif // _MSC_VER
+
+この修正を外せば, 期待通り 3 と表示されている.
+不明なのが函数 test000,  test001,  test002, test003 がポインタとポインタ
+の引き算で同じことをしているのにこっちはできているということ...
+
+hcxx1.exe, hcc1.exe のバグだった.
