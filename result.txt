@@ -4,12 +4,13 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.03.30.12.49
+begin 2021.04.01.18.00
 ISO_IEC_9899 0/2821
 C2nd 0/156
 optimization 0/106
-ISO_IEC_14882 3/945                3 fails : See dynamic_cast_bug.txt
-end 2021.03.30.13.18
+ISO_IEC_14882 5/945                3 fails : See dynamic_cast_bug.txt
+                                   2 kills : See Bug #24
+end 2021.04.01.19.19
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit GNU code
@@ -486,16 +487,11 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.03.25.09.15
+begin 2021.04.01.15.45
 ISO_IEC_9899 0/2862
-C2nd 0/156               <- should be 157
-     			 At this time,
-			 gcc -g -o test150_gcc.exe test150.c
-			 received signal
-			 WA : change gcc -> g++
-			 "setenv OUTPUT_DOC_INFO" effects this.
+C2nd 0/157
 optimization 0/106
-end 2021.03.25.09.26
+end 2021.04.01.16.12
 --------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
@@ -588,11 +584,11 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.03.12.03.23
-ISO_IEC_9899 0/2881
+begin 2021.04.01.16.38
+ISO_IEC_9899 0/2884
 C2nd 0/155
-optimization 0/95
-end 2021.03.12.03.28
+optimization 0/106
+end 2021.04.01.16.51
 --------------------------
 hcc1.exe printf_chk.dll
 vine linux x86
@@ -676,11 +672,11 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.03.12.03.42
-ISO_IEC_9899 0/2835
+begin 2021.04.01.18.00
+ISO_IEC_9899 0/2821
 C2nd 0/157
-optimization 0/95
-end 2021.03.12.03.42
+optimization 0/106
+end 2021.04.01.18.00
 --------------------------
 hcc1.exe tacsim.dll
 vine linux x86
@@ -1200,3 +1196,50 @@ int generator_ptrdiff_type()
 の引き算で同じことをしているのにこっちはできているということ...
 
 hcxx1.exe, hcc1.exe のバグだった.
+--------------------------------------------------------------
+Bug #24
+
+hcxx1.exe + intelxx.dll vine  linux
+
+wdog.exe : /home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions:hcxx1.exe -o test106.s test106.i --generator-option ( --debug --x86 ) was killed by wdog.exe
+
+wdog.exe : /home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions:hcxx1.exe -o test107.s test107.i --generator-option ( --debug --x86 ) was killed by wdog.exe
+
+テスト終了後に実際にやってみた.
+
+> cd /home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions
+> hcxx1.exe -o test106.s test106.i --generator-option \( --debug --x86 \)
+> make -n test106.log
+wdog.exe -v g++ -g -o test106.exe test106.s
+wdog.exe -v  ./test106.exe > test106.log
+dos2unix.csh test106.log
+> make -n test106.lof
+wdog.exe -v g++ -g -o test106.exe test106.s
+wdog.exe -v  ./test106.exe > test106.log
+dos2unix.csh test106.log
+wdog.exe -v diff test106.log test106.lof
+touch test106.lof
+> make test106.lof
+wdog.exe -v g++ -g -o test106.exe test106.s
+
+wdog.exe -v  ./test106.exe > test106.log
+dos2unix.csh test106.log
+wdog.exe -v diff test106.log test106.lof
+touch test106.lof
+> > hcxx1.exe -o test107.s test107.i --generator-option \( --debug --x86 \)
+> make test107.lof
+wdog.exe -v g++ -g -o test107.exe test107.s
+wdog.exe -v  ./test107.exe > test107.log
+dos2unix.csh test107.log
+wdog.exe -v diff test107.log test107.lof
+touch test107.lof
+> 
+
+たしかに少し時間がかかっている.
+
+
+> wdog.exe -v hcxx1.exe -o test107.s test107.i --generator-option \( --debug --x86 \)
+> wdog.exe -v hcxx1.exe -o test106.s test106.i --generator-option \( --debug --x86 \)
+> 
+
+いずれも成功している.
