@@ -533,15 +533,14 @@ end 2020.12.03.07.22
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.9.1 Debug|x64
+Visual Studio 2019 16.9.3 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.12.03.42
-ISO_IEC_9899 7/2859            1 diff : See Bug #2
-                               6 lof were updated
+begin 2021.04.01.18.41
+ISO_IEC_9899 1/2862            1 diff : See Bug #2
 C2nd 0/157
-optimization 0/95
-end 2021.03.12.08.05
+optimization 0/106
+end 2021.04.01.22.56
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
