@@ -712,14 +712,14 @@ end 2020.12.04.06.54
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-Visual Studio 2019 16.9.1 Debug|x64
+Visual Studio 2019 16.9.3 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.12.14.45
-ISO_IEC_9899 5/2835        5 lof were updated
+begin 2021.04.03.18.31
+ISO_IEC_9899 0/2820
 C2nd 0/156
-optimization 0/95
-end 2021.03.12.21.47
+optimization 0/106
+end 2021.04.04.01.28
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -968,6 +968,18 @@ hcc1.exe intel.dll Windows g++ and VC++
 
 No log is outputed. But if test010.exe generated at the test is executed,
 Expected log is outputed.
+
+2021/04/03 現在
+
+以前はテスト終了後に ./test010.exe をコマンドラインから実行すると期待したログが
+出力されていたが, 今はもはや出力されない.
+相変わらずだが gdb から test010.exe を実行すれば期待通り動作する.
+簡易デバッガを作成して, そこから実行してみたがそれでも再現しない.
+
+test010.exe
+ => DOS 窓から実行すると期待したログが必ず出力される.
+ => DOS 窓から tcsh を起動して, そこから実行するとログが出力されない.
+ => gdb から実行すればログが必ず出力される.
 --------------------------------------
 hcc1.exe intel.dll target MS code
 
