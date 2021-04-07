@@ -782,14 +782,14 @@ end 2020.12.04.16.53
 hcc1.exe intel.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.9.1 Debug|x64
+Visual Studio 2019 16.9.3 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.04.05.18.42
-ISO_IEC_9899 2/2856    2 failures : Bug #3
+begin 2021.04.06.16.54
+ISO_IEC_9899 1/2856      1 process was killed
 C2nd 0/155
 optimization 0/106
-end 2021.04.06.10.42
+end 2021.04.07.07.13
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -969,6 +969,7 @@ Bug #3
 41_ISO_IEC_9899/6_Language/1_Lexical_elements/2_Identifiers/0_Identifiers/1_ok/test015.c
 41_ISO_IEC_9899/6_Language/3_Expressions/2_Postfix_operators/2_Function_calls/4_param/test046.c
 Error for the generated assembler source line is too long.
+=> resolved
 --------------------------------------
 Bug #5
 hcxx1.exe intelxx.dll Windows 10 g++ (VC++ also happened)
