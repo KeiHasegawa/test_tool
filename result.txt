@@ -511,12 +511,11 @@ Windows 10 64 bit
 g++ (9.3.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.19.12.13
-ISO_IEC_9899 3/2861           See Bug #2
-                              2 lof were updated
+begin 2021.04.10.22.02
+ISO_IEC_9899 0/2862
 C2nd 0/157
 optimization 0/106
-end 2021.03.19.15.08
+end 2021.04.11.00.39
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
