@@ -508,14 +508,14 @@ end 2020.08.02 11:57
 hcc1.exe intel.dll
 target 64 bit GNU code
 Windows 10 64 bit
-g++ (9.3.0) -g
+g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.04.10.22.02
-ISO_IEC_9899 0/2862
+begin 2021.04.14.19.32
+ISO_IEC_9899 1/2863             Bug #26
 C2nd 0/157
 optimization 0/106
-end 2021.04.11.00.39
+end 2021.04.14.22.10
 --------------------------
 hcc1.exe intel.dll
 target 64 bit GNU code
@@ -1233,3 +1233,13 @@ touch test107.lof
 > 
 
 いずれも成功している.
+------------------------------------------
+Bug #26
+Windows 10 hcc1.exe + intel.dll
+target 64 bit GNU code
+gcc 9.3.0 -> gcc 10.1.0 の最初の変更で発生した.
+関係あるかどうか不明だが
+cygwin1.dll のビルド & インストールを行った状態.
+ビルド後正しくプログラムが動作していないので
+/usr/local/bin/cygwin1.dll
+をリネームした状態.
