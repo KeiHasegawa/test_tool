@@ -1235,11 +1235,6 @@ touch test107.lof
 いずれも成功している.
 ------------------------------------------
 Bug #26
-Windows 10 hcc1.exe + intel.dll
-target 64 bit GNU code
-gcc 9.3.0 -> gcc 10.1.0 の最初の変更で発生した.
-関係あるかどうか不明だが
-cygwin1.dll のビルド & インストールを行った状態.
-ビルド後正しくプログラムが動作していないので
-/usr/local/bin/cygwin1.dll
-をリネームした状態.
+
+~/lang/20_hcc1/src/memo 参照
+
