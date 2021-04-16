@@ -601,14 +601,14 @@ end 2020.08.02 12:19
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
-g++ (9.3.0) -g
+g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.28.06.08
-ISO_IEC_9899 0/2866
+begin 2021.04.16.18.11
+ISO_IEC_9899 2/2885           See Bug #26, Bug #27
 C2nd 0/155
-optimization 0/82
-end 2020.11.28.07.09
+optimization 0/106
+end 2021.04.16.19.25
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -1242,4 +1242,22 @@ setenv DOG_ALARM 10
 Bug #26
 
 ~/lang/20_hcc1/src/memo 参照
+
+------------------------------------------
+Bug #27
+wdog : /cygdrive/d/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok:hcc1.exe test024.i
+
+Windows 10 hcc1.exe + printf_chk.dll
+
+% cd d:/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations/4_Function_specifiers/1_ok
+% hcc1.exe test024.i --generator ~/lang/bin/printf_chk.dll
+で再現する.
+% gdb ~/lang/bin/hcc1.exe
+(gdb) run test024.i --generator ~/lang/bin/printf_chk.dll
+Thread 1 "hcc1" received signal SIGABRT, Aborted.
+operator delete (ptr=0x0) at ../../.././libstdc++-v3/libsupc++/del_op.cc:50
+50	}
+(gdb)
+
+これは Bug #26 と同じような状況. やはり調査には cygwin1.dll のビルドが必要.
 
