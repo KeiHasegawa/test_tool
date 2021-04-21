@@ -8,7 +8,7 @@ begin 2021.04.14.18.39
 ISO_IEC_9899 0/2822
 C2nd 0/156
 optimization 0/106
-ISO_IEC_14882 4/945                3 fails : See dynamic_cast_bug.txt
+ISO_IEC_14882 4/945                3 failures : See dynamic_cast_bug.txt
                                    1 kill  : See Bug #25
 end 2021.04.14.19.28
 --------------------------
@@ -224,20 +224,21 @@ begin 2020.08.02 12:32
 ISO_IEC_9899 0/2777
 C2nd 0/156
 optimization 0/82
-ISO_IEC_14882 2/565 1 fail : See Bug #9
+ISO_IEC_14882 2/565 1 failure : See Bug #9
 end 2020.08.02 12:38
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-g++ (9.3.0) -g
+g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.02.15.06
-ISO_IEC_9899 0/2779
+begin 2021.04.21.21.38
+ISO_IEC_9899 0/2780
 C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 1/602 See Bug #5
-end 2020.12.02.16.51
+optimization 0/106
+ISO_IEC_14882 3/936               3 failures : See dynamic_cast_bug.txt
+                                  NOTE : test008.cpp is not PASS
+end 2021.04.21.23.45
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
@@ -310,7 +311,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 12.02.01.16
 ISO_IEC_9899 8/2797       6 processes were killed
-                          1 fail : Bug #3
+                          1 failure : Bug #3
 			  1 diff :
 			  3_Expressions/2_Postfix_operators/2_Function_calls/3_call/test100.c
 			  Note that test099.exe cannot be build at this time.
