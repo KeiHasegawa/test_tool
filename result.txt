@@ -319,7 +319,8 @@ ISO_IEC_14882 25/938      8 failures : dynamic_cast
 
                           1 failure
 12_Special_member_functions/7_Construction_and_destruction/1_ok/test008.exe
-runtime error
+runtime error  -> fixed 2021/04/25 14:16
+
                           2 failures
 14_Templates/0_Templates/test209.cpp hcxx1.exe runtime error
                          test211.cpp
