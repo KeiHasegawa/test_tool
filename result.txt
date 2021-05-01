@@ -342,7 +342,7 @@ assemble error
 
 1 failure
 15_Exception_handling/0_Exception_handling/1_ok/test007.exe
-runtime error
+runtime error  -> Bug #29
 
 d:/cygwin64/tmp/43_ISO_IEC_14882.log.04.22.19.58
 end 2021.04.23.12.55
@@ -787,11 +787,11 @@ Windows 10 64 bit
 g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.04.18.17.27
+begin 2021.04.26.15.26
 ISO_IEC_9899 0/2857
 C2nd 0/155
 optimization 0/106
-end 2021.04.19.03.44
+end 2021.04.27.01.30
 --------------------------
 hcc1.exe intel.dll
 target 64 bit MS code
@@ -862,11 +862,11 @@ Windows 10 64 bit
 g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.04.19.19.51
-ISO_IEC_9899 5/2838    5 lof files were updated.
+begin 2021.05.01.18.13
+ISO_IEC_9899 0/2838
 C2nd 0/155
 optimization 1/106     1 diff : test019
-end 2021.04.20.05.26
+end 2021.05.02.03.46
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -1292,3 +1292,5 @@ Bug #28
 wdog : /cygdrive/d/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:hcc1.exe -o test018.s test018.i --generator-option ( --debug )
 
 delete でエラーする例のエラー Bug #27 と同じ.
+------------------------------------------------------------------------
+Bug #29
