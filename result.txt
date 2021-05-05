@@ -1441,10 +1441,58 @@ int intel::decide_local(int offset, COMPILER::var* v)
 これは, ... linux 版の hcc1.exe+intel.dll, hcxx1.exe+intelxx.dll
 も再テストが必要だ. 勿論 Windows 版もそうなる.
 
+=> 残念ながら linux 版でレベルダウンしている. 勿論上の修正をもとに戻せば
+   hcc1.exe + intel.dll は全 PASS する.
+
+   おそらく最初の設計では offset 引数の意味は,
+
+   ebp-offset は既に使用しているからそのさらに offset を増やしたところに
+   ローカル変数を置けということなのだろう.
+
+GNU 32 bit
+       pushl   %ebp
+       movl    %esp, %ebp
+       pushl   %ebx
+       subl    $160, %esp
+
++-------------+ <- esp(new)
+|             |
+|             |
+|             |
+|             |
+|             |
+|             |
+|             |
++-------------+
+|   ebx(old)  |
++-------------+ <- ebp(new)
+|   ebp(old)  |
++-------------+ <- esp(old)
 
 
+MS 32 bit
+	push 	ebp
+	push 	ebx
+	mov 	ebp, esp
+	sub 	esp, 32
 
++-------------+ <- esp(new)
+|             |
+|             |
+|             |
+|             |
+|             |
+|             |
+|             |
++-------------+ <- ebp(new)
+|   ebx(old)  |
++-------------+
+|   ebp(old)  |
++-------------+ <- esp(old)
 
-
-
-
+        
+        スタックフレームの構造が少し違っている.
+	GNU 32 bit で例の修正を入れれば ebx(old) の部分が変更されるから
+	正しく動かなくなるのは理解できる.
+	一方 MS 32 bit で例の修正を入れても ebx(old) の部分は変更されな
+	いから必ずしも正しく動かなくなるわけではない.
