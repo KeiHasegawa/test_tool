@@ -395,18 +395,19 @@ end 2020.12.14.13.17
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-g++ (9.3.0) -g
+g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.01.11.58
-ISO_IEC_9899 7/2797  1 process was killed
-                     See Bug #3 about 2 failures
-                     See Bug #6 about 3 failures
-                     See Bug #7 about 2 failures
+begin 2021.05.04.18.18
+ISO_IEC_9899 1/2816  1 process was killed
 C2nd 0/154
-optimization 1/82    diff test019
-ISO_IEC_14882 0/604
-end 12.01.23.30
+optimization 1/106    diff test019
+ISO_IEC_14882 9/939   1 diff See Bug #30
+		      
+                      8 failures : dynamic_cast
+                            test00[2356789].exe test010.exe runtime error
+
+end 2021.05.05.08.49
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -1269,3 +1270,181 @@ wdog : /cygdrive/d/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations
 delete でエラーする例のエラー Bug #27 と同じ.
 ------------------------------------------------------------------------
 Bug #29
+
+~/lang/21_hcxx1/src/bug29.txt
+-----------------------------------------------------------------------
+Bug #30
+d:/home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/6_Initialization/2_Initializing_bases_and_members/1_ok/test001.cpp
+
+hcxx1.exe intelxx.dll --generator-option \( --ms --x86 --debug \)
+
+テストプログラム test001.exe の結果が
+d.x = 12
+d.y = 11
+d.b.x = 14
+d.c = 13
+が期待値だが
+d.x = 12
+d.y = 11
+d.b.x = 10657800
+d.c = 13
+のように d.b.x の表示結果が違っている.
+
+D のレイアウトは
+
++---------------+
+|               |  D::B1
++---------------+
+|               |  D::B2
++---------------+
+|               |  D::b
++---------------+
+|               |  D::c
++---------------+
+
+のようになっている. b はオフセット 8 である.
+なので d.b.x を printf に渡しているときのアドレスは正しい.
+ということは, 初期化の段階で間違えているということだろうか?
+
++---------------+             0x00d9a000
+|     12(c)     |  D::B1
++---------------+
+|     11(b)     |  D::B2
++---------------+
+|  0x00d9a008   |  D::b     << 間違えている.
++---------------+
+|     13(d)     |  D::c
++---------------+
+
+> Debug.print *(int*)0x00d9a000
+c
+> Debug.print *(int*)0x00d9a004
+b
+> Debug.print *(int*)0x00d9a008
+0x00d9a008                         << 間違えている
+> Debug.print *(int*)0x00d9a00c
+d
+
+どうやら実行するたびにアドレスが変わるようなことはないらしい.
+_test_main にきたときすでに書き換わっている.
+
+main が呼ばれたときに既に書き換わっている.
+
+B1 のコンストラクタでメンバ x に値をセットしているのは以下の部分で
+
+B1::B1(int xx) : x(xx) {}
+
+test001.asm でいうと以下:
+
+	; *.var0x8001d0270 := xx
+	mov 	ecx, DWORD PTR [ebp-8]
+	mov 	eax, DWORD PTR [ebp+16]
+	mov	[ecx], eax                 (*)
+
+最初の B1::B1 の呼び出しでは期待通り (*) のところで eax = 0xc = 12
+になっている.
+しかし問題の 2 回目の呼び出しでは (*) のところで eax = 0xe = 14 が
+期待値だが 0x00d9a008 になっている. これは B1::this の値.
+
+B1 のコンストラクタで this と xx はそれぞれ ebp+12, ebp+16 に格納されている
+
+1 回目の呼び出し
+>Debug.print *(int*)(ebp+12)
+0x00d9a000
+>Debug.print *(int*)(ebp+16)
+0x0000000c
+>
+
+できている.
+
+2 回目の呼び出し
+>Debug.print *(int*)(ebp+12)
+0x00d9a008
+>Debug.print *(int*)(ebp+16)
+0x00d9a008                     <<<< できていない
+
+> Debug.print ebp
+0x0133f984
+
+ということは 0x0133f984 + 16 = 0x0133f994 に書き込む値を間違えている.
+
+
+>Debug.print esp
+0x010ffc88
+>Debug.print ebp-32
+0x010ffc88
+
+スタックが十分に確保されていないのが原因.
+
+??0D@D@@@@H@Z	PROC
+	; enter
+	push 	ebp
+	push 	ebx
+	mov 	ebp, esp
+	sub 	esp, 32
+
+例えば 32 ではなくて 64 にすれば期待通り動作する.
+D のコンストラクタのスタックスケジューリングが間違っている.
+
+gdb からスタックサイズ 32 になる状況を作りだせた.
+
+#if 0
+  stack::local_area += func_local(func, ms_handler);
+#else
+  stack::local_area = func_local(func, ms_handler);
+#endif
+
+なんだか覚えているけど, この修正が影響して結果的にレベルダウンしたらしい.
+
+decide_local を思い切って変更してみた.
+
+int intel::decide_local(int offset, COMPILER::var* v)
+{
+  using namespace std;
+  using namespace COMPILER;
+  usr* u = v->usr_cast();
+  usr::flag_t f = u ? u->m_flag : usr::NONE;
+  assert(!(f & usr::flag_t(usr::FUNCTION | usr::TYPEDEF)));
+  map<var*, address*>& tbl = address_descriptor.second;
+  if (f & usr::CONST_PTR) {
+    assert(tbl.find(v) != tbl.end());
+    return offset;
+  }
+  const type* T = v->m_type;
+#if 0
+  int size = (f & usr::VL) ? psize() : T->size();
+  offset += size;
+#endif
+  int al = (f & usr::VL) ? psize() : T->align();
+  offset = align(offset, al);
+  if (f & usr::VL){
+    assert(tbl.find(v) == tbl.end());
+    tbl[v] = new allocated(-offset);
+    if ( !allocated::base ){
+      offset += psize();
+      allocated::base = offset;
+    }
+  }
+  else {
+    assert(tbl.find(v) == tbl.end());
+    tbl[v] = new stack(v, -offset);
+  }
+#if 0
+  return offset;
+#else
+  int size = (f & usr::VL) ? psize() : T->size();  
+  return offset + size;
+#endif
+}
+
+これで一応スタックのサイズは 32 のままでテストに PASS している.
+これは, ... linux 版の hcc1.exe+intel.dll, hcxx1.exe+intelxx.dll
+も再テストが必要だ. 勿論 Windows 版もそうなる.
+
+
+
+
+
+
+
+
