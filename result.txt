@@ -4,13 +4,12 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.04.25.17.23
+begin 2021.05.05.18.32
 ISO_IEC_9899 0/2822
 C2nd 0/156
 optimization 0/106
-ISO_IEC_14882 4/945                3 failures : See dynamic_cast_bug.txt
-                                   1 lof was updated
-end 2021.04.25.17.40
+ISO_IEC_14882 3/945                3 failures : See dynamic_cast_bug.txt
+end 2021.05.05.18.50
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit GNU code
@@ -490,11 +489,11 @@ vine linux x86
 g++ (10.2.0) -g
 bison (2.4.3)
 flex (2.5.35)
-begin 2021.04.25.10.01
+begin 2021.05.05.17.45
 ISO_IEC_9899 0/2863
 C2nd 0/157
 optimization 0/106
-end 2021.04.25.10.11
+end 2021.05.05.17.56
 --------------------------
 hcc1.exe intel.dll
 target 32 bit GNU code
