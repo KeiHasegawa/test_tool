@@ -397,16 +397,13 @@ Windows 10 64 bit
 g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.05.04.18.18
-ISO_IEC_9899 1/2816  1 process was killed
+begin 2021.05.07.17.25
+ISO_IEC_9899 0/2816
 C2nd 0/154
 optimization 1/106    diff test019
-ISO_IEC_14882 9/939   1 diff See Bug #30
-		      
-                      8 failures : dynamic_cast
+ISO_IEC_14882 8/939   8 failures : dynamic_cast
                             test00[2356789].exe test010.exe runtime error
-
-end 2021.05.05.08.49
+end 2021.05.08.08.00
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
@@ -1495,3 +1492,84 @@ MS 32 bit
 	正しく動かなくなるのは理解できる.
 	一方 MS 32 bit で例の修正を入れても ebx(old) の部分は変更されな
 	いから必ずしも正しく動かなくなるわけではない.
+
+2021/05/05
+
+   以下の修正をいれてみた:
+
+   const type* T = v->m_type;
+   int size = (f & usr::VL) ? psize() : T->size();
++  if (mode == GNU || x64)
++    offset += size;
+-  offset += size;
+   int al = (f & usr::VL) ? psize() : T->align();
+   offset = align(offset, al);
+   if (f & usr::VL){
+@@ -1382,9 +1381,7 @@ int intel::decide_local(int offset, COMPILER::var* v)
+     assert(tbl.find(v) == tbl.end());
+     tbl[v] = new stack(v, -offset);
+   }
++  if (mode == GNU || x64)
++    return offset;
++  return offset + size;
+-  return offset;
+ }
+
+   一応 linux 32 bit 版は hcc1 + intel.dll で全 PASS したが,
+   MS 32 bit 版は激しくレベルダウンしている.
+
+   このレベルダウンを受けて, 一旦上の修正はキャンセルし以下のように修正した:
+   
+#ifdef CXX_GENERATOR
+#if 0
+  stack::local_area += func_local(func, ms_handler);
+#else
+  if (mode == GNU || x64)
+    stack::local_area = func_local(func, ms_handler);
+  else
+    stack::local_area += func_local(func, ms_handler);
+#endif
+#else // CXX_GENERATOR
+#if 0
+  stack::local_area += func_local(func);
+#else
+  if (mode == GNU || x64)
+    stack::local_area = func_local(func);
+  else
+    stack::local_area += func_local(func);
+#endif
+#endif // CXX_GENERATOR
+
+   これは間違い. 単純に D::D で使用しているローカル変数が 7 つで
+   7 * 4 = 28 で函数呼び出しで 2 つ分だから 4 * 2  = 8
+   すなわち 36 バイトスタックにとるのが正しい.
+
+        +-------------------+ <- esp(new)
+    36  | 函数呼び出しの引数1 |
+    32  | .var0x800091930   || 函数呼び出しの引数2 |
+    28  | .var0x800090780   |
+    24  | .var0x80008e360   |
+    20  | .var0x800090bc0   |
+    16  | .var0x800091070   |
+    12  | .var0x800090b20   |
+     8  | .var0x800090a80   |
+     4  | 現状使っていない    |
+        +-------------------+ <- ebp(new)
+        |   ebx(old)        |
+        +-------------------+
+        |   ebp(old)        |
+        +-------------------+ <- esp(old)
+
+  ebp-4 を使うならば 36 バイトで十分.(アラインメントを考慮していないが)
+  ebp-4 を使わないのならば 40 バイト.
+
+call_arg::calculate(code)  0 を返している. 8 を返すのが期待値.
+
+#ifdef CXX_GENERATOR
+    if (!T) {
+      p = q + 1;
+      n = max(n, m);  ここが抜けていた.
+      continue;
+    }
+#endif // CXX_GENERATOR
+
