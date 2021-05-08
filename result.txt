@@ -30,13 +30,12 @@ Windows 10 64 bit
 g++ (10.1.0) -g
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.05.02.19.08
-ISO_IEC_9899 5/2822          5 lof were updated
+begin 2021.05.08.17.32
+ISO_IEC_9899 0/2822
 C2nd 0/156
 optimization 0/106
-ISO_IEC_14882 6/939          1 lof were updated
-                             5 failures : Bug #23
-end 2021.05.02.22.34
+ISO_IEC_14882 5/939            5 failures : Bug #23
+end 2021.05.08.20.57
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
