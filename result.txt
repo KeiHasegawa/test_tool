@@ -154,15 +154,15 @@ end 2020.12.05.11.59
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.9.2 Debug|x64
+Visual Studio 2019 16.9.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.24.08.21
-ISO_IEC_9899 0/2843
+begin 2021.05.18.18.41
+ISO_IEC_9899 0/2844
 C2nd 0/154
 optimization 0/106
-ISO_IEC_14882 1/938         1 failure : Bug #5
-end 2021.03.24.12.04
+ISO_IEC_14882 0/938
+end 2021.05.18.22.05
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -253,18 +253,17 @@ end 2020.12.05.14.55
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.9.2 Debug|x64
+Visual Studio 2019 16.9.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2021.03.28.06.06
-ISO_IEC_9899 2/2781                1 process was killed
-                                   1 differene : Bug #24
+begin 2021.05.19.18.55
+ISO_IEC_9899 0/2780
 C2nd 0/155
 optimization 0/106
 ISO_IEC_14882 4/936                1 diff : Bug #9.2
                                    2 runtime erorr and 1 diff :
 				   See dynamic_cast_bug.txt
-end 2021.03.28.18.54
+end 2021.05.20.06.37
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
@@ -339,16 +338,19 @@ end 12.06.17.26
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x64
+Visual Studio 2019 16.9.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.21.03.53
-ISO_IEC_9899 7/2798    2 failures Bug #3
-                       5 processes were killed
+begin 2020.05.20.18.11
+ISO_IEC_9899 1/2816    1 (vs_wrapper) process was killed
 2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/604
-end 2020.12.21.21.25
+optimization 0/106
+ISO_IEC_14882 11/938        8 failures : dynamic_cast
+                             test00[2356789].exe test010.exe runtime error
+                            2 processes (vs_wrapper) was killed
+			    0_Exception_handling/1_ok/test007.exe
+                            runtime error  -> Bug #29
+end 2020.05.21.15.35
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -425,18 +427,19 @@ end 12.07.16.27
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x64
+Visual Studio 2019 16.9.4 Debug|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.22.04.52
-ISO_IEC_9899 8/2798  See Bug #3 about 2 failures
-                     See Bug #6 about 3 failures
-                     See Bug #7 about 2 failures
-                     1 proceses (vs_wrapper) were killed
+begin 2021.05.21.17.37
+ISO_IEC_9899 9/2817   9 processes were killed
+                      7 (vs_wrapper) 1 (hcpp.exe) 1 (hcxx1.exe)
 2nd 0/154
-optimization 1/82    1 diff : test019
-ISO_IEC_14882 6/604  6 proceses (vs_wrapper) were killed
-end 2020.12.22.22.32
+optimization 1/106    diff test019
+ISO_IEC_14882 15/939   8 failures : dynamic_cast
+                            test00[2356789].exe test010.exe runtime error
+		       7 processes were killed
+		       6 (vs_wrapper) 1(hcxx1.exe)
+end 2021.05.22.16.15
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
