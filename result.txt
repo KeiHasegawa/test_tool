@@ -1006,21 +1006,9 @@ hcc1.exe intel.dll target 32 bit MS code
 Unexpected exception occures when test00[03].exe is executed.
 --------------------------------------
 Bug #9
-hcxx1.exe tacsimxx.dll vine linux, Visual Studio
-
+hcxx1.exe + tacsimxx.dll Debug|x86 & Debug|x64
 12_Special_member_functions/0_Special_member_functions/test050.cpp
-tes050.exe runtime error
-
-hcxx1.exe + tacsimxx.dll Debug|x86
-
-43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions:diff test050.log test050.lof
-
-After test:
-hcxx1.exe test050.i --generator d:/home/khasegawa/lang/bin/tacsimxx.dll
-d.x = -572662307, d.b = 2
-d.x = 3, d.b = 4
-
-Reproduced.
+see ~/bug_9 This test is not well-formed, especially at tacsim environment.
 --------------------------------------
 Bug #10
 hcxx1.exe printf_chkxx.dll Visual Studio Debug|x86
