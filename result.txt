@@ -370,15 +370,20 @@ end 2020.11.20.13.48
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x86
+Visual Studio 2019 16.10.0 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.17.16.47
-ISO_IEC_9899 1/2797   Bug #3
+begin 2021.05.28.18.02
+ISO_IEC_9899 1/2816           1 process(vs_wrapper) was killed
 2nd 0/154
-optimization 0/82
-ISO_IEC_14882 1/604   Bug #5
-end 2020.12.18.10.19
+optimization 0/106
+ISO_IEC_14882 11/938          dynamic_cast
+			      test00[2356789].exe and test010.exe runtime error
+			      1 vs_wrapper was killed
+    			      0_Exception_handling/1_ok/test007.exe
+                              runtime error  -> Bug #29
+			      Bug #33 -> Fixed
+end 2021.05.29.15.12
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -1585,4 +1590,33 @@ hcxx1.exe + printf_chkxx.dll Debug|x86
 wdog : /cygdrive/d/home/khasegawa/lang/43_ISO_IEC_14882/07_Declarations/5_Linkage_specifications/1_ok:hcxx1.exe test005.i
 After test, again execute hcxx1.exe but not reproduced.
 ---------------------------------------------------------------
+Bug #33
+43_ISO_IEC_14882/12_Special_member_functions/7_Construction_and_destruction/1_ok/test008.cpp
+
+hcxx1.exe + intelxx.dll Debug|x86 target MS 64 bit code
+
+Debug|x64 で target MS 64 bit code
+
+であれば PASS していたのでちょっとした問題のように思える.
+
+d:/tmp/y2
+
+をテストプログラムのあるディレクトリで実行すれば再現する.
+
+修正は以下.
+
+ || defined(WIN32)
+
+がないためこのバグが発生していた.
+
+#if defined(__x86_64__) || defined(_WIN64) || defined(WIN32)
+extern "C" DLL_EXPORT
+int generator_ptrdiff_type()
+{
+  using namespace COMPILER;
+  if (intel::mode == intel::MS && intel::x64 )
+    return type::LONGLONG;
+  return type::LONG;
+}
+#endif // defined(__x86_64__) || defined(_WIN64) || defined(WIN32)
 
