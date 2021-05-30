@@ -466,16 +466,17 @@ end 11.22.14.17
 hcxx1.exe intelxx.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.8.2 Debug|x86
+Visual Studio 2019 16.10.0 Debug|x86
 bison (3.0.4)
 flex (2.6.4)
 begin 2020.12.19.05.11
-ISO_IEC_9899 7/2797   Bug #3 Bug #6 Bug #7
-                      1 process was killed
-C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 2/604   2 processes were killed
-end 2020.12.19.23.15
+ISO_IEC_9899 1/2816   1 process(vs_wrapper) was killed
+C2nd 1/155            1 process(hcpp) was killed
+optimization 1/106    1 diff
+ISO_IEC_14882 11/938  8 failures dynamic_cast
+                      1 failure Bug #5
+		      2 processes(vs_wrapper) were killed
+end 2021.05.30.15.57
 --------------------------
 hcxx1.exe intelxx.dll
 target 32 bit MS code
