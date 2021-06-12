@@ -68,15 +68,17 @@ end 05.16.00.24
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+Visual Studio 2019 16.10.0 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.17.18.06
-ISO_IEC_9899 0/2803
+begin 2021.06.09.18.37
+ISO_IEC_9899 0/2822
 C2nd 0/156
-optimization 0/82
-ISO_IEC_14882 0/605
-end 2020.11.17.21.29
+optimization 0/106
+ISO_IEC_14882 6/939
+                               5 failures : Bug #23
+			       1 failure : Bug #34
+end 2021.06.09.23.44
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit GNU code
@@ -166,15 +168,15 @@ end 2021.05.18.22.05
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+Visual Studio 2019 16.10.0 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.18.11.20
-ISO_IEC_9899 0/2825
+begin 2021.06.10.18.27
+ISO_IEC_9899 0/2844
 C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/604
-end 2020.11.18.12.45
+optimization 0/106
+ISO_IEC_14882 0/938
+end 2021.06.10.20.39
 --------------------------
 hcxx1.exe printf_chkxx.dll
 Windows 10 64 bit
@@ -267,15 +269,15 @@ end 2021.05.20.06.37
 --------------------------
 hcxx1.exe tacsimxx.dll
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+Visual Studio 2019 16.10.0 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.19.14.11
-ISO_IEC_9899 0/2779
+begin 2021.06.10.21.11
+ISO_IEC_9899 0/2780
 C2nd 0/155
 optimization 0/82
-ISO_IEC_14882 0/602
-end 2020.11.19.16.31
+ISO_IEC_14882 3/932                3 failures. See dynamic_cast_bug.txt
+end 2021.06.11.00.45
 --------------------------
 hcxx1.exe tacsimxx.dll
 Winddows 10 64 bit
@@ -357,15 +359,18 @@ end 2020.05.21.15.35
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+Visual Studio 2019 16.10.0 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.20.04.22
-ISO_IEC_9899 2/2797           Bug #3
+begin 2021.06.11.18.43
+ISO_IEC_9899 0/2816
 C2nd 0/154
-optimization 0/82
-ISO_IEC_14882 0/604
-end 2020.11.20.13.48
+optimization 0/106
+ISO_IEC_14882 9/938        8 failures : dynamic_cast
+                             test00[2356789].exe test010.exe runtime error
+			    0_Exception_handling/1_ok/test007.exe
+                            runtime error  -> Bug #29
+end 2021.06.12.07.50
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -879,16 +884,14 @@ end 2021.05.15.07.15
 hcc1.exe intel.dll
 target 32 bit MS code
 Windows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x64
+Visual Studio 2019 16.10.0 Release|x64
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.11.21.06.10
-ISO_IEC_9899 7/283     2 failure : Bug #3
-                       3 failure : Bug #6
-                       2 failure : Bug #7
+begin 2021.06.08.18.42
+ISO_IEC_9899 0/2857
 C2nd 0/155
-optimization 1/82      test019.lof.cc1.ms86 was updated
-end 2020.11.21.13.52
+optimization 1/106      1 diff test019
+end 2021.06.09.04.28
 --------------------------
 hcc1.exe intel.dll
 target 32 bit MS code
@@ -1618,3 +1621,15 @@ int generator_ptrdiff_type()
 }
 #endif // defined(__x86_64__) || defined(_WIN64) || defined(WIN32)
 
+---------------------------------------------------------------
+Bug #34
+
+wdog : /cygdrive/d/home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/0_Special_member_functions:./test123.exe
+
+After test, tried to execute test123.exe generated at the test
+
+% ./test123.exe
+s.p = 0
+%
+
+worked as expected.
