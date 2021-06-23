@@ -328,17 +328,19 @@ end 2021.05.10.08.51
 hcxx1.exe intelxx.dll
 target 64 bit MS code
 Windows 10 64 bit
-g++ (9.3.0) -O3
+g++ (10.1.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 12.06.03.51
-ISO_IEC_9899 19/2797    1 process was killed
-                        1 failure : Bug #3
-			17 failure : vcxproj retarget
-C2nd 1/148              retarget vcxproj
-optimization 0/82
-ISO_IEC_14882 0/604
-end 12.06.17.26
+begin 2021.06.22.17.52
+ISO_IEC_9899 0/2816
+C2nd 0/154
+optimization 0/106
+ISO_IEC_14882 9/938       8 failures : dynamic_cast
+                             test00[2356789].exe test010.exe runtime error
+                          1 failure
+                          0_Exception_handling/1_ok/test007.exe
+                            runtime error  -> Bug #29
+end 2021.06.23.09.17
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
