@@ -430,7 +430,7 @@ bison (3.0.4)
 flex (2.6.4)
 begin 2021.06.23.18.36
 ISO_IEC_9899 0/2816
-C2nd 1/154            Bug# 35
+C2nd 1/154            Bug #35
 optimization 1/106    diff test019
 ISO_IEC_14882 8/938   8 failures : dynamic_cast
                             test00[2356789].exe test010.exe runtime error
@@ -626,14 +626,14 @@ end 2021.04.16.19.25
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
-g++ (9.3.0) -O3
+g++ (10.1.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.03.20.18
-ISO_IEC_9899 0/2864
+begin 2021.06.25.18.46
+ISO_IEC_9899 1/2885           Bug #37
 C2nd 0/155
-optimization 0/82
-end 2020.12.03.21.18
+optimization 0/106
+end 2021.06.25.20.05
 --------------------------
 hcc1.exe printf_chk.dll
 Windows 10 64 bit
@@ -714,14 +714,14 @@ end 2021.04.17.22.19
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
-g++ (9.3.0) -O3
+g++ (10.1.0) -O3
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.04.05.29
-ISO_IEC_9899 0/2820
+begin 2021.06.26.19.01
+ISO_IEC_9899 0/2821
 C2nd 0/157
-optimization 0/82
-end 2020.12.04.06.54
+optimization 0/106
+end 2021.06.26.20.51
 --------------------------
 hcc1.exe tacsim.dll
 Windows 10 64 bit
@@ -1646,3 +1646,12 @@ Abort(core dumped)
 Abort(core dumped)
 >
 ------------------------------------------------------------------
+Bug #37
+wdog : /cygdrive/d/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok:hcc1.exe test018.i
+
+After test, I could reproduce the bug:
+
+> cd d:/home/khasegawa/lang/41_ISO_IEC_9899/6_Language/5_Declarations/2_Type_specifiers/1_Structure_and_union_specifiers/1_ok
+> hcc1.exe test018.i --generator ~/lang/bin/printf_chk.dll
+Abort(core dumped)
+>
