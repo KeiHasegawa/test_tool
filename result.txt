@@ -299,15 +299,17 @@ end 2021.05.26.07.11
 --------------------------
 hcxx1.exe tacsimxx.dll
 Winddows 10 64 bit
-Visual Studio 2019 16.7.7 Release|x86
+Visual Studio 2019 16.10.2 Release|x86
 bison (3.0.4)
 flex (2.6.4)
-begin 2020.12.12.06.06
-ISO_IEC_9899 0/2779
+begin 2021.07.01.18.59
+ISO_IEC_9899 0/2780
 C2nd 0/155
-optimization 0/82
-ISO_IEC_14882 2/602           Bug #13, Bug #14
-end 2020.12.12.08.41
+optimization 0/106
+ISO_IEC_14882 3/935                test009.i runtime error
+                                   1 diff dynamic_cast test010.log
+				   Bug #40
+end 2021.07.01.22.34
 --------------------------
 hcxx1.exe intelxx.dll
 target 64 bit MS code
@@ -1679,3 +1681,16 @@ After test
 % hcxx1.exe test106.i --generator d:/home/khasegawa/lang/bin/printf_chkxx.dll
 
 Normally done. Not reproduced.
+---------------------------------------------------------------------
+Bug #40
+wdog : /cygdrive/d/home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/1_Constructors/1_ok:hcxx1.exe test005.i
+
+Parse error occured.
+
+After test
+% cd d:/home/khasegawa/lang/43_ISO_IEC_14882/12_Special_member_functions/1_Constructors/1_ok
+% hcxx1.exe test005.i --generator d:/home/khasegawa/lang/bin/tacsimxx.dll
+
+Normally done. Not reproduced.
+
+
